@@ -3,9 +3,9 @@ set -xeuo pipefail
 
 extract() {
   if [[ "$RUNNER_OS" == "Windows" ]]; then
-    unzip -v "$1"
+    unzip "$1"
   else
-    tar -vzxf "$1"
+    tar -zxf "$1"
   fi
 }
 
@@ -48,4 +48,9 @@ extract "${FILENAME}${SUFFIX}"
 # The files were archived with a leading directory
 set_executable "${FILENAME}/bin/nvim"
 
-echo "${OUTPUT_DIR}/${FILENAME}/bin" >>"$GITHUB_PATH"
+BINDIR="${OUTPUT_DIR}/${FILENAME}/bin"
+if [[ "$RUNNER_OS" == "Windows" ]]; then
+  echo "$BINDIR" | tr '/' '\\' >>"$GITHUB_PATH"
+else
+  echo "$BINDIR" >>"$GITHUB_PATH"
+fi
