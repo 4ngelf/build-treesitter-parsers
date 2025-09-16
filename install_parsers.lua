@@ -48,4 +48,6 @@ treesitter
   })
   :wait()
 
-vim.cmd.cquit(0)
+require("nvim-treesitter.log").show()
+
+vim.cmd([[cquit 0]])
