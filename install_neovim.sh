@@ -21,16 +21,16 @@ if [[ "$RUNNER_OS" == "Windows" && "$RUNNER_ARCH" == "X64" ]]; then
   FILENAME="nvim-win64"
   SUFFIX=".zip"
 elif [[ "$RUNNER_OS" == "Linux" && "$RUNNER_ARCH" == "X64" ]]; then
-  FILENAME="linux-x86_64"
+  FILENAME="nvim-linux-x86_64"
   SUFFIX=".tar.gz"
 elif [[ "$RUNNER_OS" == "Linux" && "$RUNNER_ARCH" == "ARM64" ]]; then
-  FILENAME="linux-arm64"
+  FILENAME="nvim-linux-arm64"
   SUFFIX=".tar.gz"
 elif [[ "$RUNNER_OS" == "macOS" && "$RUNNER_ARCH" == "X64" ]]; then
-  FILENAME="macos-x86_64"
+  FILENAME="nvim-macos-x86_64"
   SUFFIX=".tar.gz"
 elif [[ "$RUNNER_OS" == "macOS" && "$RUNNER_ARCH" == "ARM64" ]]; then
-  FILENAME="macos-arm64"
+  FILENAME="nvim-macos-arm64"
   SUFFIX=".tar.gz"
 else
   echo "Not supported $RUNNER_ARCH $RUNNER_OS"
