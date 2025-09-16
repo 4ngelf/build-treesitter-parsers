@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-set -euo pipefail
+set -xeuo pipefail
 
 extract () {
     if [[ "$RUNNER_OS" == "Windows" ]]; then
