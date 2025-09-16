@@ -38,7 +38,8 @@ else
 fi
 
 URL="https://github.com/neovim/neovim/releases/latest/download/${FILENAME}${SUFFIX}"
-OUTPUT_DIR="${HOME}/nvim-${GITHUB_RUN_ID}"
+OUTPUT_DIR_NAME="nvim-${GITHUB_RUN_ID}"
+OUTPUT_DIR="${HOME}/${OUTPUT_DIR_NAME}"
 
 mkdir -p "$OUTPUT_DIR"
 curl -Lo "${OUTPUT_DIR}/${FILENAME}${SUFFIX}" "$URL"
@@ -48,9 +49,8 @@ extract "${FILENAME}${SUFFIX}"
 # The files were archived with a leading directory
 set_executable "${FILENAME}/bin/nvim"
 
-BINDIR="${OUTPUT_DIR}/${FILENAME}/bin"
 if [[ "$RUNNER_OS" == "Windows" ]]; then
-  echo "$BINDIR" | tr '/' '\\' >>"$GITHUB_PATH"
+  echo "${USERPROFILE}\\${OUTPUT_DIR_NAME}\\${FILENAME}\\bin" >>"$GITHUB_PATH"
 else
-  echo "$BINDIR" >>"$GITHUB_PATH"
+  echo "${OUTPUT_DIR}/${FILENAME}/bin" >>"$GITHUB_PATH"
 fi
