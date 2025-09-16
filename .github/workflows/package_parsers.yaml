@@ -1,0 +1,38 @@
+name: Compile parsers
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+    steps:
+    - uses: actions/checkout@v5.0.0
+    - name: Install neovim
+      run: bash install_neovim.sh
+    - name: Install tree-sitter-cli
+      run: npm install tree-sitter-cli
+    - name: clone nvim-treesitter
+      run: |
+        git clone --depth 1 --filter blob:none --branch main https://github.com/nvim-treesitter/nvim-treesitter nvim-treesitter
+    - name: Compile parsers
+      run: nvim -u install_parsers.lua --headless
+    - name: compress parsers
+      run: |
+        OUTPUT_FILE="parsers-${RUNNER_ARCH}-${RUNNER_OS}.tar.zst"
+        tar -I zstd -cf "$OUTPUT_FILE" -C out .
+        echo "OUTPUT_FILE=${OUTPUT_FILE}" >> "$GITHUB_ENV"
+    - name: upload parsers
+      run: |
+        TAG=$(gh release list --json 'tagName,isLatest' -q 'map(select(.isLatest))[0].tagName')
+        gh release upload "$TAG" "$OUTPUT_FILE" --clobber
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
