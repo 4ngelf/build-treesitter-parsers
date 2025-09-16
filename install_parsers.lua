@@ -41,12 +41,11 @@ treesitter.setup({
   -- sync_install = true,
 })
 
-log("compile stable parsers")
+log("compile all parsers")
 treesitter
   .install({ "unstable" }, {
     summary = true,
   })
   :wait()
 
-os.exit(0)
-
+vim.cmd.cquit(0)
