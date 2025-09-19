@@ -24,7 +24,7 @@ jobs:
       run: |
         git clone --depth 1 --filter blob:none --branch main https://github.com/nvim-treesitter/nvim-treesitter nvim-treesitter
     - name: Compile parsers
-      run: nvim -u install_parsers.lua --headless
+      run: nvim -u install_parsers.lua
     - name: compress parsers
       run: |
         OUTPUT_FILE="parsers-${RUNNER_ARCH}-${RUNNER_OS}.tar.zst"
@@ -35,4 +35,5 @@ jobs:
         TAG=$(gh release list --json 'tagName,isLatest' -q 'map(select(.isLatest))[0].tagName')
         gh release upload "$TAG" "$OUTPUT_FILE" --clobber
       env:
+
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
