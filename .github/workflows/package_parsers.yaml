@@ -25,12 +25,12 @@ jobs:
         with:
           version: 0.15.1
       - name: Install tree-sitter-cli
-        run: npm install tree-sitter-cli
+        run: npm install -g tree-sitter-cli
       - name: Compile parsers
         run: |
           zig build \
           --prefix out \
-          --summary=all \
+          --summary all \
           "-Dtarget=$ZIG_TARGET" \
           -Drelease=true
       - name: compress parsers
@@ -44,4 +44,3 @@ jobs:
           gh release upload "$TAG" "$OUTPUT_FILE" --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-

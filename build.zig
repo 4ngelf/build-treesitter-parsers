@@ -15,7 +15,7 @@ pub fn build(b: *std.Build) void {
         .name = "untar_tool",
         .root_module = b.createModule(.{
             .root_source_file = b.path("scripts/untar.zig"),
-            .target = target,
+            .target = b.resolveTargetQuery(.{}),
             .optimize = .ReleaseFast,
         }),
     });
@@ -34,6 +34,7 @@ pub fn build(b: *std.Build) void {
             .dest_dir = .{ .override = .{ .custom = "parser" } },
             .pdb_dir = .disabled,
             .implib_dir = .disabled,
+            .dest_sub_path = @tagName(parser.name) ++ ".so",
         });
         b.getInstallStep().dependOn(&parser_install.step);
     }
