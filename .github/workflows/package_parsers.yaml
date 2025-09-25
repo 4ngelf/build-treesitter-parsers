@@ -7,32 +7,41 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+        target:
+          - x86_64-linux
+          - aarch64-linux
+          - x86_64-windows
+    env:
+      ZIG_TARGET: ${{ matrix.target }}
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     defaults:
       run:
         shell: bash
     steps:
-    - uses: actions/checkout@v5.0.0
-    - name: Install neovim
-      run: bash install_neovim.sh
-    - name: Install tree-sitter-cli
-      run: npm install tree-sitter-cli
-    - name: clone nvim-treesitter
-      run: |
-        git clone --depth 1 --filter blob:none --branch main https://github.com/nvim-treesitter/nvim-treesitter nvim-treesitter
-    - name: Compile parsers
-      run: nvim -u install_parsers.lua --headless
-    - name: compress parsers
-      run: |
-        OUTPUT_FILE="parsers-${RUNNER_ARCH}-${RUNNER_OS}.tar.zst"
-        tar -I zstd -cf "$OUTPUT_FILE" -C out .
-        echo "OUTPUT_FILE=${OUTPUT_FILE}" >> "$GITHUB_ENV"
-    - name: upload parsers
-      run: |
-        TAG=$(gh release list --json 'tagName,isLatest' -q 'map(select(.isLatest))[0].tagName')
-        gh release upload "$TAG" "$OUTPUT_FILE" --clobber
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v5.0.0
+      - uses: mlugg/setup-zig@v2.0.5
+        with:
+          version: 0.15.1
+      - name: Install tree-sitter-cli
+        run: npm install tree-sitter-cli
+      - name: Compile parsers
+        run: |
+          zig build \
+          --prefix out \
+          --summary=all \
+          "-Dtarget=$ZIG_TARGET" \
+          -Drelease=true
+      - name: compress parsers
+        run: |
+          OUTPUT_FILE="parsers-${ZIG_TARGET}.tar.zst"
+          tar -I zstd -cf "$OUTPUT_FILE" -C out .
+          echo "OUTPUT_FILE=${OUTPUT_FILE}" >> "$GITHUB_ENV"
+      - name: upload parsers
+        run: |
+          TAG=$(gh release list --json 'tagName,isLatest' -q 'map(select(.isLatest))[0].tagName')
+          gh release upload "$TAG" "$OUTPUT_FILE" --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

@@ -1,0 +1,13 @@
+.{
+    .name = .build_treesitter_parsers,
+    .version = "0.0.1",
+    .minimum_zig_version = "0.15.1",
+    .paths = .{
+        "LICENSE",
+        "build",
+        "build.zig",
+        "build.zig.zon",
+        "scripts",
+    },
+    .fingerprint = 0xe7cc3a2729271495,
+}
