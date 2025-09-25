@@ -87,7 +87,5 @@ fn intToStr(b: *Build, int: anytype) []const u8 {
 }
 
 const std = @import("std");
-const tar = std.tar;
-const flate = std.compress.flate;
 const Build = std.Build;
 const Config = @import("Config.zig");
