@@ -22,7 +22,7 @@ pub fn main() !void {
     var output_dir = try fs.openDirAbsolute(output_path, .{ .no_follow = true });
     defer output_dir.close();
 
-    var stream_buffer: [std.heap.page_size_min]u8 = undefined;
+    var stream_buffer: [std.heap.page_size_max]u8 = undefined;
     var read_tar_gz = targz_file.reader(&stream_buffer);
 
     var decompress_buffer: [flate.max_window_len]u8 = undefined;
