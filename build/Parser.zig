@@ -25,12 +25,14 @@ pub fn build(self: *const Parser, b: *Build, config: *const Config) *Build.Step.
     untar_run.addFileArg(targz);
     const repository = untar_run.addOutputDirectoryArg(tsname ++ "-tmp");
 
+    const treesitter_path = if (self.install.subpath) |subpath|
+        repository.path(b, subpath)
+    else
+        repository;
+
     const parser_dir = addTreeSitterGenerate(b, .{
         .config = config,
-        .treesitter_path = if (self.install.subpath) |subpath|
-            repository.path(b, subpath)
-        else
-            repository,
+        .treesitter_path = treesitter_path,
         .directory_output = tsname ++ "-src",
     });
 
@@ -50,12 +52,12 @@ pub fn build(self: *const Parser, b: *Build, config: *const Config) *Build.Step.
 
     if (self.install.needs_scanner)
         parser.root_module.addCSourceFile(.{
-            .file = repository.path(b, "src/scanner.c"),
+            .file = treesitter_path.path(b, "src/scanner.c"),
         });
 
     if (self.install.c_sources) |c_sources|
         parser.root_module.addCSourceFiles(.{
-            .root = repository,
+            .root = treesitter_path,
             .files = c_sources,
         });
 

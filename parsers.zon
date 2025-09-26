@@ -152,6 +152,7 @@
         .install = .{
             .revision = "cc764dadcbbceb3f259396fef66f970c72e94f96",
             .url = "https://github.com/EmranMR/tree-sitter-blade",
+            .needs_scanner = true,
         },
         .maintainers = .{.calebdw},
         .tier = 2,
@@ -198,6 +199,7 @@
         .install = .{
             .revision = "057a75df0c866034d8edce989f701ee2cb0481d8",
             .url = "https://github.com/c3lang/tree-sitter-c3",
+            .needs_scanner = true,
         },
         .maintainers = .{.cbuttner},
         .tier = 2,
@@ -3063,6 +3065,7 @@
         .install = .{
             .revision = "8fd7cfd90be29b363922b2e09bf6a7db50de04a8",
             .url = "https://github.com/bytecodealliance/tree-sitter-wit",
+            .needs_scanner = true,
         },
         .maintainers = .{.mkatychev},
         .tier = 2,
@@ -3072,6 +3075,7 @@
         .install = .{
             .revision = "7b821c748dc410332f59496c0dea2632168c4e5a",
             .url = "https://github.com/BlockLune/tree-sitter-wxml",
+            .needs_scanner = true,
         },
         .maintainers = .{.BlockLune},
         .tier = 2,
