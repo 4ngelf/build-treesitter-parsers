@@ -1,6 +1,6 @@
 const parsers = @as(
     []const Parser,
-    @import("build/parsers.zon"),
+    @import("parsers.zon"),
 );
 const default_treesitter_abi: i32 = 15;
 

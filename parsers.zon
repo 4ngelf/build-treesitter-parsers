@@ -1,0 +1,3176 @@
+.{
+    .{
+        .name = .ada,
+        .install = .{
+            .revision = "364d3f4aa8b382113bdd5d3ca6d82dc9c74ac738",
+            .url = "https://github.com/briot/tree-sitter-ada",
+        },
+        .maintainers = .{.briot},
+        .tier = 2,
+    },
+    .{
+        .name = .agda,
+        .install = .{
+            .revision = "e8d47a6987effe34d5595baf321d82d3519a8527",
+            .url = "https://github.com/tree-sitter/tree-sitter-agda",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.Decodetalkers},
+        .tier = 2,
+    },
+    .{
+        .name = .angular,
+        .install = .{
+            .revision = "d1f24a8890462cb740909ff62a3a079cded288bc",
+            .url = "https://github.com/dlvandenberg/tree-sitter-angular",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.dlvandenberg},
+        // .requires = .{ "html", "html_tags" },
+        .tier = 2,
+    },
+    .{
+        .name = .apex,
+        .install = .{
+            .revision = "3597575a429766dd7ecce9f5bb97f6fec4419d5d",
+            .url = "https://github.com/aheber/tree-sitter-sfapex",
+            .subpath = "apex",
+        },
+        .maintainers = .{ .aheber, .xixiafinland },
+        .tier = 2,
+    },
+    .{
+        .name = .arduino,
+        .install = .{
+            .revision = "53eb391da4c6c5857f8defa2c583c46c2594f565",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-arduino",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ObserverOfTime},
+        // .requires = .{"cpp"},
+        .tier = 2,
+    },
+    .{
+        .name = .@"asm",
+        .install = .{
+            .revision = "04962e15f6b464cf1d75eada59506dc25090e186",
+            .url = "https://github.com/RubixDev/tree-sitter-asm",
+        },
+        .maintainers = .{.RubixDev},
+        .tier = 2,
+    },
+    .{
+        .name = .astro,
+        .install = .{
+            .revision = "213f6e6973d9b456c6e50e86f19f66877e7ef0ee",
+            .url = "https://github.com/virchau13/tree-sitter-astro",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.virchau13},
+        // .requires = .{ "html", "html_tags" },
+        .tier = 2,
+    },
+    .{
+        .name = .authzed,
+        .install = .{
+            .revision = "83e5c26a8687eb4688fe91d690c735cc3d21ad81",
+            .url = "https://github.com/mleonidas/tree-sitter-authzed",
+        },
+        .maintainers = .{.mattpolzin},
+        .tier = 2,
+    },
+    .{
+        .name = .awk,
+        .install = .{
+            .revision = "34bbdc7cce8e803096f47b625979e34c1be38127",
+            .url = "https://github.com/Beaglefoot/tree-sitter-awk",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.Beaglefoot},
+        .tier = 2,
+    },
+    .{
+        .name = .bash,
+        .install = .{
+            .revision = "20f55fb9663568f16ebceaac7673d2aa530add46",
+            .url = "https://github.com/tree-sitter/tree-sitter-bash",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.TravonteD},
+        .tier = 2,
+    },
+    .{
+        .name = .bass,
+        .install = .{
+            .revision = "28dc7059722be090d04cd751aed915b2fee2f89a",
+            .url = "https://github.com/vito/tree-sitter-bass",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .beancount,
+        .install = .{
+            .revision = "b7a2557e6c8cf1dc70a52cece1861522ad3903fc",
+            .url = "https://github.com/polarmutex/tree-sitter-beancount",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.polarmutex},
+        .tier = 2,
+    },
+    .{
+        .name = .bibtex,
+        .install = .{
+            .revision = "8d04ed27b3bc7929f14b7df9236797dab9f3fa66",
+            .url = "https://github.com/latex-lsp/tree-sitter-bibtex",
+        },
+        .maintainers = .{ .theHamsta, .clason },
+        .tier = 2,
+    },
+    .{
+        .name = .bicep,
+        .install = .{
+            .revision = "bff59884307c0ab009bd5e81afd9324b46a6c0f9",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-bicep",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .bitbake,
+        .install = .{
+            .revision = "a5d04fdb5a69a02b8fa8eb5525a60dfb5309b73b",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-bitbake",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .blade,
+        .install = .{
+            .revision = "cc764dadcbbceb3f259396fef66f970c72e94f96",
+            .url = "https://github.com/EmranMR/tree-sitter-blade",
+        },
+        .maintainers = .{.calebdw},
+        .tier = 2,
+    },
+    .{
+        .name = .blueprint,
+        .install = .{
+            .revision = "355ef84ef8a958ac822117b652cf4d49bac16c79",
+            .url = "https://gitlab.com/gabmus/tree-sitter-blueprint",
+        },
+        .maintainers = .{.gabmus},
+        .tier = 2,
+    },
+    .{
+        .name = .bp,
+        .install = .{
+            .revision = "ee641d15390183d7535777947ce0f2f1fbcee69f",
+            .url = "https://github.com/ambroisie/tree-sitter-bp",
+        },
+        .maintainers = .{.ambroisie},
+        // .readme_note = "Android.Blueprint",
+        .tier = 2,
+    },
+    .{
+        .name = .brightscript,
+        .install = .{
+            .revision = "55168264ea174085d2e91377a33f216190df2f51",
+            .url = "https://github.com/ajdelcimmuto/tree-sitter-brightscript",
+        },
+        .maintainers = .{.ajdelcimmuto},
+        .tier = 2,
+    },
+    .{
+        .name = .c,
+        .install = .{
+            .revision = "ae19b676b13bdcc13b7665397e6d9b14975473dd",
+            .url = "https://github.com/tree-sitter/tree-sitter-c",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .c3,
+        .install = .{
+            .revision = "057a75df0c866034d8edce989f701ee2cb0481d8",
+            .url = "https://github.com/c3lang/tree-sitter-c3",
+        },
+        .maintainers = .{.cbuttner},
+        .tier = 2,
+    },
+    .{
+        .name = .@"c-sharp",
+        .install = .{
+            .revision = "3431444351c871dffb32654f1299a00019280f2f",
+            .url = "https://github.com/tree-sitter/tree-sitter-c-sharp",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .caddy,
+        .install = .{
+            .revision = "2686186edb61be47960431c93a204fb249681360",
+            .url = "https://github.com/opa-oz/tree-sitter-caddy",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"opa-oz"},
+        .tier = 3,
+    },
+    .{
+        .name = .cairo,
+        .install = .{
+            .revision = "6238f609bea233040fe927858156dee5515a0745",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cairo",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .capnp,
+        .install = .{
+            .revision = "7b0883c03e5edd34ef7bcf703194204299d7099f",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-capnp",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .chatito,
+        .install = .{
+            .revision = "c0ed82c665b732395073f635c74c300f09530a7f",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-chatito",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .circom,
+        .install = .{
+            .revision = "02150524228b1e6afef96949f2d6b7cc0aaf999e",
+            .url = "https://github.com/Decurity/tree-sitter-circom",
+        },
+        .maintainers = .{.@"alexandr-martirosyan"},
+        .tier = 2,
+    },
+    .{
+        .name = .clojure,
+        .install = .{
+            .revision = "e43eff80d17cf34852dcd92ca5e6986d23a7040f",
+            .url = "https://github.com/sogaiu/tree-sitter-clojure",
+        },
+        .maintainers = .{.NoahTheDuke},
+        .tier = 2,
+    },
+    .{
+        .name = .cmake,
+        .install = .{
+            .revision = "cf9799600b2ba5e6620fdabddec3b2db8306bc46",
+            .url = "https://github.com/uyha/tree-sitter-cmake",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.uyha},
+        .tier = 2,
+    },
+    .{
+        .name = .comment,
+        .install = .{
+            .revision = "689be73775bd2dd57b938b8e12bf50fec35a6ca3",
+            .url = "https://github.com/stsewd/tree-sitter-comment",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.stsewd},
+        .tier = 2,
+    },
+    .{
+        .name = .commonlisp,
+        .install = .{
+            .revision = "32323509b3d9fe96607d151c2da2c9009eb13a2f",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-commonlisp",
+        },
+        .maintainers = .{.theHamsta},
+        .tier = 2,
+    },
+    .{
+        .name = .cooklang,
+        .install = .{
+            .revision = "4ebe237c1cf64cf3826fc249e9ec0988fe07e58e",
+            .url = "https://github.com/addcninblue/tree-sitter-cooklang",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.addcninblue},
+        .tier = 2,
+    },
+    .{
+        .name = .corn,
+        .install = .{
+            .revision = "464654742cbfd3a3de560aba120998f1d5dfa844",
+            .url = "https://github.com/jakestanger/tree-sitter-corn",
+        },
+        .maintainers = .{.jakestanger},
+        .tier = 2,
+    },
+    .{
+        .name = .cpon,
+        .install = .{
+            .revision = "594289eadfec719198e560f9d7fd243c4db678d5",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cpon",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .cpp,
+        .install = .{
+            .revision = "2a682d312b09eb737a08b4900ec786415574b6bf",
+            .url = "https://github.com/tree-sitter/tree-sitter-cpp",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.theHamsta},
+        // .requires = .{"c"},
+        .tier = 2,
+    },
+    .{
+        .name = .css,
+        .install = .{
+            .revision = "6e327db434fec0ee90f006697782e43ec855adf5",
+            .url = "https://github.com/tree-sitter/tree-sitter-css",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.TravonteD},
+        .tier = 2,
+    },
+    .{
+        .name = .csv,
+        .install = .{
+            .revision = "7eb7297823605392d2bbcc4c09b1cd18d6fa9529",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-csv",
+            .subpath = "csv",
+        },
+        .maintainers = .{.amaanq},
+        // .requires = .{"tsv"},
+        .tier = 2,
+    },
+    .{
+        .name = .cuda,
+        .install = .{
+            .revision = "48b066f334f4cf2174e05a50218ce2ed98b6fd01",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cuda",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.theHamsta},
+        // .requires = .{"cpp"},
+        .tier = 2,
+    },
+    .{
+        .name = .cue,
+        .install = .{
+            .revision = "770737bcff2c4aa3f624d439e32b07dbb07102d3",
+            .url = "https://github.com/eonpatapon/tree-sitter-cue",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .cylc,
+        .install = .{
+            .revision = "6d1d81137112299324b526477ce1db989ab58fb8",
+            .url = "https://github.com/elliotfontaine/tree-sitter-cylc",
+        },
+        .maintainers = .{.elliotfontaine},
+        .tier = 2,
+    },
+    .{
+        .name = .d,
+        .install = .{
+            .revision = "fb028c8f14f4188286c2eef143f105def6fbf24f",
+            .url = "https://github.com/gdamore/tree-sitter-d",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .dart,
+        .install = .{
+            .revision = "80e23c07b64494f7e21090bb3450223ef0b192f4",
+            .url = "https://github.com/UserNobody14/tree-sitter-dart",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.akinsho},
+        .tier = 2,
+    },
+    .{
+        .name = .desktop,
+        .install = .{
+            .revision = "b77dad972dcc96f9a7123fb08d8eb46308e31d9a",
+            .url = "https://github.com/ValdezFOmar/tree-sitter-desktop",
+        },
+        .maintainers = .{.ValdezFOmar},
+        .tier = 2,
+    },
+    .{
+        .name = .devicetree,
+        .install = .{
+            .revision = "6557729f4afaf01dec7481d4e5975515ea8f0edd",
+            .url = "https://github.com/joelspadin/tree-sitter-devicetree",
+        },
+        .maintainers = .{.jedrzejboczar},
+        .tier = 2,
+    },
+    .{
+        .name = .dhall,
+        .install = .{
+            .revision = "62013259b26ac210d5de1abf64cf1b047ef88000",
+            .url = "https://github.com/jbellerb/tree-sitter-dhall",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .diff,
+        .install = .{
+            .revision = "e42b8def4f75633568f1aecfe01817bf15164928",
+            .url = "https://github.com/the-mikedavis/tree-sitter-diff",
+        },
+        .maintainers = .{.gbprod},
+        .tier = 2,
+    },
+    .{
+        .name = .disassembly,
+        .install = .{
+            .revision = "0229c0211dba909c5d45129ac784a3f4d49c243a",
+            .url = "https://github.com/ColinKennedy/tree-sitter-disassembly",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ColinKennedy},
+        .tier = 2,
+    },
+    .{
+        .name = .djot,
+        .install = .{
+            .revision = "74fac1f53c6d52aeac104b6874e5506be6d0cfe6",
+            .url = "https://github.com/treeman/tree-sitter-djot",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.NoahTheDuke},
+        .tier = 2,
+    },
+    .{
+        .name = .dockerfile,
+        .install = .{
+            .revision = "971acdd908568b4531b0ba28a445bf0bb720aba5",
+            .url = "https://github.com/camdencheek/tree-sitter-dockerfile",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.camdencheek},
+        .tier = 2,
+    },
+    .{
+        .name = .dot,
+        .install = .{
+            .revision = "9ab85550c896d8b294d9b9ca1e30698736f08cea",
+            .url = "https://github.com/rydesun/tree-sitter-dot",
+        },
+        .maintainers = .{.rydesun},
+        .tier = 2,
+    },
+    .{
+        .name = .doxygen,
+        .install = .{
+            .revision = "ccd998f378c3f9345ea4eeb223f56d7b84d16687",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-doxygen",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .dtd,
+        .install = .{
+            .revision = "863dbc381f44f6c136a399e684383b977bb2beaa",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-xml",
+            .needs_scanner = true,
+            .subpath = "dtd",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .earthfile,
+        .install = .{
+            .revision = "a37c5ee95ce401ca311c0ae1369d9cfb953e151d",
+            .url = "https://github.com/glehmann/tree-sitter-earthfile",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.glehmann},
+        .tier = 2,
+    },
+    .{
+        .name = .ebnf,
+        .install = .{
+            .revision = "8e635b0b723c620774dfb8abf382a7f531894b40",
+            .url = "https://github.com/RubixDev/ebnf",
+            .subpath = "crates/tree-sitter-ebnf",
+        },
+        .maintainers = .{.RubixDev},
+        .tier = 2,
+    },
+    .{
+        .name = .editorconfig,
+        .install = .{
+            .revision = "947228fb880f838c6d71e8f11dbc0bfb82cd4c78",
+            .url = "https://github.com/ValdezFOmar/tree-sitter-editorconfig",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ValdezFOmar},
+        .tier = 2,
+    },
+    .{
+        .name = .eds,
+        .install = .{
+            .revision = "26d529e6cfecde391a03c21d1474eb51e0285805",
+            .url = "https://github.com/uyha/tree-sitter-eds",
+        },
+        .maintainers = .{.uyha},
+        .tier = 2,
+    },
+    .{
+        .name = .eex,
+        .install = .{
+            .revision = "f742f2fe327463335e8671a87c0b9b396905d1d1",
+            .url = "https://github.com/connorlay/tree-sitter-eex",
+        },
+        .maintainers = .{.connorlay},
+        .tier = 2,
+    },
+    .{
+        .name = .elixir,
+        .install = .{
+            .revision = "d24cecee673c4c770f797bac6f87ae4b6d7ddec5",
+            .url = "https://github.com/elixir-lang/tree-sitter-elixir",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.connorlay},
+        .tier = 2,
+    },
+    .{
+        .name = .elm,
+        .install = .{
+            .revision = "6e3c6d51f13168f9d7794c8e8add7dfdd07d20b8",
+            .url = "https://github.com/elm-tooling/tree-sitter-elm",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.zweimach},
+        .tier = 2,
+    },
+    .{
+        .name = .elsa,
+        .install = .{
+            .revision = "0a66b2b3f3c1915e67ad2ef9f7dbd2a84820d9d7",
+            .url = "https://github.com/glapa-grossklag/tree-sitter-elsa",
+        },
+        .maintainers = .{ .@"glapa-grossklag", .amaanq },
+        .tier = 2,
+    },
+    .{
+        .name = .elvish,
+        .install = .{
+            .revision = "5e7210d945425b77f82cbaebc5af4dd3e1ad40f5",
+            .url = "https://github.com/elves/tree-sitter-elvish",
+        },
+        .maintainers = .{.elves},
+        .tier = 2,
+    },
+    .{
+        .name = .@"embedded-template",
+        .install = .{
+            .revision = "3499d85f0a0d937c507a4a65368f2f63772786e1",
+            .url = "https://github.com/tree-sitter/tree-sitter-embedded-template",
+        },
+        .maintainers = .{},
+        .tier = 2,
+    },
+    .{
+        .name = .enforce,
+        .install = .{
+            .revision = "a194046e64bdec2c9e2e1a7caa35326387f78b95",
+            .url = "https://github.com/simonvic/tree-sitter-enforce",
+        },
+        .maintainers = .{.simonvic},
+        .tier = 2,
+    },
+    .{
+        .name = .erlang,
+        .install = .{
+            .revision = "07dad1469ecb7df80f2b6d5178f79564d19d67e0",
+            .url = "https://github.com/WhatsApp/tree-sitter-erlang",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.filmor},
+        .tier = 2,
+    },
+    .{
+        .name = .facility,
+        .install = .{
+            .revision = "e4bfd3e960de9f4b4648acb1c92e9b95b47d8cfb",
+            .url = "https://github.com/FacilityApi/tree-sitter-facility",
+        },
+        .maintainers = .{.bryankenote},
+        .tier = 2,
+    },
+    .{
+        .name = .faust,
+        .install = .{
+            .revision = "122dd101919289ea809bad643712fcb483a1bed0",
+            .url = "https://github.com/khiner/tree-sitter-faust",
+        },
+        .maintainers = .{.khiner},
+        .tier = 2,
+    },
+    .{
+        .name = .fennel,
+        .install = .{
+            .revision = "fd4a24e349bcbac8a03a5a00d0dfa207baf53ca5",
+            .url = "https://github.com/alexmozaidze/tree-sitter-fennel",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.alexmozaidze},
+        .tier = 2,
+    },
+    .{
+        .name = .fidl,
+        .install = .{
+            .revision = "0a8910f293268e27ff554357c229ba172b0eaed2",
+            .url = "https://github.com/google/tree-sitter-fidl",
+        },
+        .maintainers = .{.chaopeng},
+        .tier = 2,
+    },
+    .{
+        .name = .firrtl,
+        .install = .{
+            .revision = "8503d3a0fe0f9e427863cb0055699ff2d29ae5f5",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-firrtl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .fish,
+        .install = .{
+            .revision = "aa074a0bacde8b5823c592574d7138f156a95776",
+            .url = "https://github.com/ram02z/tree-sitter-fish",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ram02z},
+        .tier = 2,
+    },
+    .{
+        .name = .foam,
+        .install = .{
+            .revision = "472c24f11a547820327fb1be565bcfff98ea96a4",
+            .url = "https://github.com/FoamScience/tree-sitter-foam",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.FoamScience},
+        .tier = 2,
+    },
+    .{
+        .name = .forth,
+        .install = .{
+            .revision = "90189238385cf636b9ee99ce548b9e5b5e569d48",
+            .url = "https://github.com/AlexanderBrevig/tree-sitter-forth",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .fortran,
+        .install = .{
+            .revision = "8334abca785db3a041292e3b3b818a82a55b238f",
+            .url = "https://github.com/stadelmanma/tree-sitter-fortran",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .fsh,
+        .install = .{
+            .revision = "fad2e175099a45efbc98f000cc196d3674cc45e0",
+            .url = "https://github.com/mgramigna/tree-sitter-fsh",
+        },
+        .maintainers = .{.mgramigna},
+        .tier = 2,
+    },
+    .{
+        .name = .fsharp,
+        .install = .{
+            .revision = "5141851c278a99958469eb1736c7afc4ec738e47",
+            .url = "https://github.com/ionide/tree-sitter-fsharp",
+            .needs_scanner = true,
+            .subpath = "fsharp",
+        },
+        .maintainers = .{.nsidorenco},
+        .tier = 2,
+    },
+    .{
+        .name = .func,
+        .install = .{
+            .revision = "f780ca55e65e7d7360d0229331763e16c452fc98",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-func",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .fusion,
+        .install = .{
+            .revision = "19db2f47ba4c3a0f6238d4ae0e2abfca16e61dd6",
+            .url = "https://gitlab.com/jirgn/tree-sitter-fusion",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.jirgn},
+        .tier = 2,
+    },
+    .{
+        .name = .gap,
+        .install = .{
+            .revision = "2bac14863b76ad0ff6fd7204c50574732acd66df",
+            .url = "https://github.com/gap-system/tree-sitter-gap",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.reiniscirpons},
+        // .readme_note = "GAP.system",
+        .tier = 2,
+    },
+    .{
+        .name = .gaptst,
+        .install = .{
+            .revision = "69086d7627c03e1f4baf766bcef14c60d9e92331",
+            .url = "https://github.com/gap-system/tree-sitter-gaptst",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.reiniscirpons},
+        // .readme_note = "GAP.system.test.files",
+        // .requires = .{"gap"},
+        .tier = 2,
+    },
+    .{
+        .name = .gdscript,
+        .install = .{
+            .revision = "9686853b696db07118ad110e440d6de0ca6498b4",
+            .url = "https://github.com/PrestonKnopp/tree-sitter-gdscript",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.PrestonKnopp},
+        // .readme_note = "Godot",
+        .tier = 2,
+    },
+    .{
+        .name = .gdshader,
+        .install = .{
+            .revision = "14e834063e136fa69b6d91f711f4f1981acf424b",
+            .url = "https://github.com/GodOfAvacyn/tree-sitter-gdshader",
+        },
+        .maintainers = .{.godofavacyn},
+        .tier = 2,
+    },
+    .{
+        .name = .@"git-config",
+        .install = .{
+            .revision = "0fbc9f99d5a28865f9de8427fb0672d66f9d83a5",
+            .url = "https://github.com/the-mikedavis/tree-sitter-git-config",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .@"git-rebase",
+        .install = .{
+            .revision = "bff4b66b44b020d918d67e2828eada1974a966aa",
+            .url = "https://github.com/the-mikedavis/tree-sitter-git-rebase",
+        },
+        .maintainers = .{.gbprod},
+        .tier = 2,
+    },
+    .{
+        .name = .gitattributes,
+        .install = .{
+            .revision = "1b7af09d45b579f9f288453b95ad555f1f431645",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gitattributes",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .gitcommit,
+        .install = .{
+            .revision = "a716678c0f00645fed1e6f1d0eb221481dbd6f6d",
+            .url = "https://github.com/gbprod/tree-sitter-gitcommit",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.gbprod},
+        .tier = 2,
+    },
+    .{
+        .name = .gitignore,
+        .install = .{
+            .revision = "f4685bf11ac466dd278449bcfe5fd014e94aa504",
+            .url = "https://github.com/shunsambongi/tree-sitter-gitignore",
+        },
+        .maintainers = .{.theHamsta},
+        .tier = 2,
+    },
+    .{
+        .name = .gleam,
+        .install = .{
+            .revision = "dae1551a9911b24f41d876c23f2ab05ece0a9d4c",
+            .url = "https://github.com/gleam-lang/tree-sitter-gleam",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .glimmer,
+        .install = .{
+            .revision = "da605af8c5999b43e6839b575eae5e6cafabb06f",
+            .url = "https://github.com/ember-tooling/tree-sitter-glimmer",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.NullVoxPopuli},
+        // .readme_note = "Glimmer.and.Ember",
+        .tier = 2,
+    },
+    .{
+        .name = .@"glimmer-javascript",
+        .install = .{
+            .revision = "5cc865a2a0a77cbfaf5062c8fcf2a9919bd54f87",
+            .url = "https://github.com/NullVoxPopuli/tree-sitter-glimmer-javascript",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.NullVoxPopuli},
+        // .requires = .{"ecma"},
+        .tier = 2,
+    },
+    .{
+        .name = .@"glimmer-typescript",
+        .install = .{
+            .revision = "12d98944c1d5077b957cbdb90d663a7c4d50118c",
+            .url = "https://github.com/NullVoxPopuli/tree-sitter-glimmer-typescript",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.NullVoxPopuli},
+        // .requires = .{"typescript"},
+        .tier = 2,
+    },
+    .{
+        .name = .glsl,
+        .install = .{
+            .revision = "24a6c8ef698e4480fecf8340d771fbcb5de8fbb4",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-glsl",
+        },
+        .maintainers = .{.theHamsta},
+        // .requires = .{"c"},
+        .tier = 2,
+    },
+    .{
+        .name = .gn,
+        .install = .{
+            .revision = "bc06955bc1e3c9ff8e9b2b2a55b38b94da923c05",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gn",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        // .readme_name = "GN (Generate.Ninja)",
+        .tier = 2,
+    },
+    .{
+        .name = .gnuplot,
+        .install = .{
+            .revision = "8923c1e38b9634a688a6c0dce7c18c8ffb823e79",
+            .url = "https://github.com/dpezto/tree-sitter-gnuplot",
+        },
+        .maintainers = .{.dpezto},
+        .tier = 2,
+    },
+    .{
+        .name = .go,
+        .install = .{
+            .revision = "2346a3ab1bb3857b48b29d779a1ef9799a248cd7",
+            .url = "https://github.com/tree-sitter/tree-sitter-go",
+        },
+        .maintainers = .{ .theHamsta, .WinWisely268 },
+        .tier = 2,
+    },
+    .{
+        .name = .goctl,
+        .install = .{
+            .revision = "49c43532689fe1f53e8b9e009d0521cab02c432b",
+            .url = "https://github.com/chaozwn/tree-sitter-goctl",
+        },
+        .maintainers = .{.chaozwn},
+        .tier = 2,
+    },
+    .{
+        .name = .@"godot-resource",
+        .install = .{
+            .revision = "9bbb540e8a2734101c6857bd437f04baa974e03d",
+            .url = "https://github.com/PrestonKnopp/tree-sitter-godot-resource",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.pierpo},
+        // .readme_note = "Godot.Resources",
+        .tier = 2,
+    },
+    .{
+        .name = .gomod,
+        .install = .{
+            .revision = "6efb59652d30e0e9cd5f3b3a669afd6f1a926d3c",
+            .url = "https://github.com/camdencheek/tree-sitter-go-mod",
+        },
+        .maintainers = .{.camdencheek},
+        .tier = 2,
+    },
+    .{
+        .name = .gosum,
+        .install = .{
+            .revision = "27816eb6b7315746ae9fcf711e4e1396dc1cf237",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-go-sum",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .gotmpl,
+        .install = .{
+            .revision = "65f4f86c3aaa9dabab36e3482584e8a111cf7db1",
+            .url = "https://github.com/ngalaiko/tree-sitter-go-template",
+        },
+        .maintainers = .{.qvalentin},
+        .tier = 2,
+    },
+    .{
+        .name = .gowork,
+        .install = .{
+            .revision = "949a8a470559543857a62102c84700d291fc984c",
+            .url = "https://github.com/omertuc/tree-sitter-go-work",
+        },
+        .maintainers = .{.omertuc},
+        .tier = 2,
+    },
+    .{
+        .name = .gpg,
+        .install = .{
+            .revision = "4024eb268c59204280f8ac71ef146b8ff5e737f6",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gpg-config",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .graphql,
+        .install = .{
+            .revision = "5e66e961eee421786bdda8495ed1db045e06b5fe",
+            .url = "https://github.com/bkegley/tree-sitter-graphql",
+        },
+        .maintainers = .{.bkegley},
+        .tier = 2,
+    },
+    .{
+        .name = .gren,
+        .install = .{
+            .revision = "c36aac51a915fdfcaf178128ba1e9c2205b25930",
+            .url = "https://github.com/MaeBrooks/tree-sitter-gren",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.MaeBrooks},
+        .tier = 2,
+    },
+    .{
+        .name = .groovy,
+        .install = .{
+            .revision = "86911590a8e46d71301c66468e5620d9faa5b6af",
+            .url = "https://github.com/murtaza64/tree-sitter-groovy",
+        },
+        .maintainers = .{.murtaza64},
+        .tier = 2,
+    },
+    .{
+        .name = .groq,
+        .install = .{
+            .revision = "1fa1ab0eb391a270957e8ad8c731b492e3645649",
+            .url = "https://github.com/ajrussellaudio/tree-sitter-groq",
+        },
+        .maintainers = .{.ajrussellaudio},
+        .tier = 2,
+    },
+    .{
+        .name = .gstlaunch,
+        .install = .{
+            .revision = "549aef253fd38a53995cda1bf55c501174372bf7",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gstlaunch",
+        },
+        .maintainers = .{.theHamsta},
+        .tier = 2,
+    },
+    .{
+        .name = .hack,
+        .install = .{
+            .revision = "bc5b3a10d6d27e8220a113a9a7fe9bec0a1574b0",
+            .url = "https://github.com/slackhq/tree-sitter-hack",
+            .needs_scanner = true,
+        },
+        .maintainers = .{},
+        .tier = 2,
+    },
+    .{
+        .name = .hare,
+        .install = .{
+            .revision = "4af5d82cf9ec39f67cb1db5b7a9269d337406592",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hare",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .haskell,
+        .install = .{
+            .revision = "0975ef72fc3c47b530309ca93937d7d143523628",
+            .url = "https://github.com/tree-sitter/tree-sitter-haskell",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.mrcjkb},
+        .tier = 2,
+    },
+    .{
+        .name = .@"haskell-persistent",
+        .install = .{
+            .revision = "577259b4068b2c281c9ebf94c109bd50a74d5857",
+            .url = "https://github.com/MercuryTechnologies/tree-sitter-haskell-persistent",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.lykahb},
+        .tier = 2,
+    },
+    .{
+        .name = .hcl,
+        .install = .{
+            .revision = "fad991865fee927dd1de5e172fb3f08ac674d914",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hcl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.MichaHoffmann},
+        .tier = 2,
+    },
+    .{
+        .name = .heex,
+        .install = .{
+            .revision = "6603380caf806b3e6c7f0bf61627bb47023d79f1",
+            .url = "https://github.com/connorlay/tree-sitter-heex",
+        },
+        .maintainers = .{.connorlay},
+        .tier = 2,
+    },
+    .{
+        .name = .helm,
+        .install = .{
+            .revision = "65f4f86c3aaa9dabab36e3482584e8a111cf7db1",
+            .url = "https://github.com/ngalaiko/tree-sitter-go-template",
+            .subpath = "dialects/helm",
+        },
+        .maintainers = .{.qvalentin},
+        .tier = 2,
+    },
+    .{
+        .name = .hjson,
+        .install = .{
+            .revision = "02fa3b79b3ff9a296066da6277adfc3f26cbc9e0",
+            .url = "https://github.com/winston0410/tree-sitter-hjson",
+        },
+        .maintainers = .{.winston0410},
+        // .requires = .{"json"},
+        .tier = 2,
+    },
+    .{
+        .name = .hlsl,
+        .install = .{
+            .revision = "bab9111922d53d43668fabb61869bec51bbcb915",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hlsl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.theHamsta},
+        // .requires = .{"cpp"},
+        .tier = 2,
+    },
+    .{
+        .name = .hlsplaylist,
+        .install = .{
+            .revision = "3bfda9271e3adb08d35f47a2102fe957009e1c55",
+            .url = "https://github.com/Freed-Wu/tree-sitter-hlsplaylist",
+        },
+        .maintainers = .{.@"Freed-Wu"},
+        .tier = 2,
+    },
+    .{
+        .name = .hocon,
+        .install = .{
+            .revision = "c390f10519ae69fdb03b3e5764f5592fb6924bcc",
+            .url = "https://github.com/antosha417/tree-sitter-hocon",
+        },
+        .maintainers = .{.antosha417},
+        .tier = 2,
+    },
+    .{
+        .name = .hoon,
+        .install = .{
+            .revision = "1545137aadcc63660c47db9ad98d02fa602655d0",
+            .url = "https://github.com/urbit-pilled/tree-sitter-hoon",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"urbit-pilled"},
+        .tier = 2,
+    },
+    .{
+        .name = .html,
+        .install = .{
+            .revision = "73a3947324f6efddf9e17c0ea58d454843590cc0",
+            .url = "https://github.com/tree-sitter/tree-sitter-html",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.TravonteD},
+        // .requires = .{"html_tags"},
+        .tier = 2,
+    },
+    .{
+        .name = .htmldjango,
+        .install = .{
+            .revision = "3a643167ad9afac5d61e092f08ff5b054576fadf",
+            .url = "https://github.com/interdependence/tree-sitter-htmldjango",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .http,
+        .install = .{
+            .revision = "db8b4398de90b6d0b6c780aba96aaa2cd8e9202c",
+            .url = "https://github.com/rest-nvim/tree-sitter-http",
+        },
+        .maintainers = .{ .amaanq, .NTBBloodbath },
+        .tier = 2,
+    },
+    .{
+        .name = .hurl,
+        .install = .{
+            .revision = "597efbd7ce9a814bb058f48eabd055b1d1e12145",
+            .url = "https://github.com/pfeiferj/tree-sitter-hurl",
+        },
+        .maintainers = .{.pfeiferj},
+        .tier = 2,
+    },
+    .{
+        .name = .hyprlang,
+        .install = .{
+            .revision = "d626ec06e4d876fc41200a30b3e6f2b4714c7367",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hyprlang",
+        },
+        .maintainers = .{.luckasRanarison},
+        .tier = 2,
+    },
+    .{
+        .name = .idl,
+        .install = .{
+            .revision = "3632e926ef4ba924b05993683111480af0d5c9e3",
+            .url = "https://github.com/cathaysia/tree-sitter-idl",
+        },
+        .maintainers = .{.cathaysia},
+        .tier = 2,
+    },
+    .{
+        .name = .idris,
+        .install = .{
+            .revision = "c56a25cf57c68ff929356db25505c1cc4c7820f6",
+            .url = "https://github.com/kayhide/tree-sitter-idris",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.kayhide},
+        .tier = 2,
+    },
+    .{
+        .name = .ini,
+        .install = .{
+            .revision = "31899dfa3b91622ea39e5c0bcddc88f45a9a3cfe",
+            .url = "https://github.com/justinmk/tree-sitter-ini",
+        },
+        .maintainers = .{.theHamsta},
+        .tier = 2,
+    },
+    .{
+        .name = .inko,
+        .install = .{
+            .revision = "74cbd0f69053b4a9ad4fed8831dee983ec7e4990",
+            .url = "https://github.com/inko-lang/tree-sitter-inko",
+        },
+        .maintainers = .{.yorickpeterse},
+        .tier = 2,
+    },
+    .{
+        .name = .ispc,
+        .install = .{
+            .revision = "9b2f9aec2106b94b4e099fe75e73ebd8ae707c04",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ispc",
+        },
+        .maintainers = .{.fab4100},
+        // .requires = .{"c"},
+        .tier = 2,
+    },
+    .{
+        .name = .@"janet-simple",
+        .install = .{
+            .revision = "7e28cbf1ca061887ea43591a2898001f4245fddf",
+            .url = "https://github.com/sogaiu/tree-sitter-janet-simple",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.sogaiu},
+        .tier = 2,
+    },
+    .{
+        .name = .java,
+        .install = .{
+            .revision = "e10607b45ff745f5f876bfa3e94fbcc6b44bdc11",
+            .url = "https://github.com/tree-sitter/tree-sitter-java",
+        },
+        .maintainers = .{.p00f},
+        .tier = 2,
+    },
+    .{
+        .name = .javadoc,
+        .install = .{
+            .revision = "85acd4655cbfaef414de6e3f87436e63ef5cb0da",
+            .url = "https://github.com/rmuir/tree-sitter-javadoc",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.rmuir},
+        .tier = 2,
+    },
+    .{
+        .name = .javascript,
+        .install = .{
+            .revision = "58404d8cf191d69f2674a8fd507bd5776f46cb11",
+            .url = "https://github.com/tree-sitter/tree-sitter-javascript",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.steelsojka},
+        // .requires = .{ "ecma", "jsx" },
+        .tier = 2,
+    },
+    .{
+        .name = .jinja,
+        .install = .{
+            .revision = "e589222a1ad44361bc376d5abdccd08e1fecfee5",
+            .url = "https://github.com/cathaysia/tree-sitter-jinja",
+            .needs_scanner = true,
+            .subpath = "tree-sitter-jinja",
+        },
+        .maintainers = .{.cathaysia},
+        // .readme_note = "basic.highlighting",
+        // .requires = .{"jinja_inline"},
+        .tier = 2,
+    },
+    .{
+        .name = .@"jinja-inline",
+        .install = .{
+            .revision = "e589222a1ad44361bc376d5abdccd08e1fecfee5",
+            .url = "https://github.com/cathaysia/tree-sitter-jinja",
+            .needs_scanner = true,
+            .subpath = "tree-sitter-jinja_inline",
+        },
+        .maintainers = .{.cathaysia},
+        // .readme_note = "needed.for.full.highlighting",
+        .tier = 2,
+    },
+    .{
+        .name = .jq,
+        .install = .{
+            .revision = "c204e36d2c3c6fce1f57950b12cabcc24e5cc4d9",
+            .url = "https://github.com/flurie/tree-sitter-jq",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .jsdoc,
+        .install = .{
+            .revision = "658d18dcdddb75c760363faa4963427a7c6b52db",
+            .url = "https://github.com/tree-sitter/tree-sitter-jsdoc",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.steelsojka},
+        .tier = 2,
+    },
+    .{
+        .name = .json,
+        .install = .{
+            .revision = "001c28d7a29832b06b0e831ec77845553c89b56d",
+            .url = "https://github.com/tree-sitter/tree-sitter-json",
+        },
+        .maintainers = .{.steelsojka},
+        .tier = 2,
+    },
+    .{
+        .name = .json5,
+        .install = .{
+            .revision = "8cb4114a4d7e5bab75d74466422e032de31d83df",
+            .url = "https://github.com/Joakker/tree-sitter-json5",
+        },
+        .maintainers = .{.Joakker},
+        .tier = 2,
+    },
+    .{
+        .name = .jsonc,
+        .install = .{
+            .revision = "02b01653c8a1c198ae7287d566efa86a135b30d5",
+            .url = "https://gitlab.com/WhyNotHugo/tree-sitter-jsonc",
+        },
+        .maintainers = .{.WhyNotHugo},
+        // .requires = .{"json"},
+        .tier = 2,
+    },
+    .{
+        .name = .jsonnet,
+        .install = .{
+            .revision = "ddd075f1939aed8147b7aa67f042eda3fce22790",
+            .url = "https://github.com/sourcegraph/tree-sitter-jsonnet",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.nawordar},
+        .tier = 2,
+    },
+    .{
+        .name = .julia,
+        .install = .{
+            .revision = "73d1539a51b8a202d6d2471cc594cf4d7c5e673f",
+            .url = "https://github.com/tree-sitter/tree-sitter-julia",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.fredrikekre},
+        .tier = 2,
+    },
+    .{
+        .name = .just,
+        .install = .{
+            .revision = "bb0c898a80644de438e6efe5d88d30bf092935cd",
+            .url = "https://github.com/IndianBoy42/tree-sitter-just",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.Hubro},
+        .tier = 2,
+    },
+    .{
+        .name = .kcl,
+        .install = .{
+            .revision = "b0b2eb38009e04035a6e266c7e11e541f3caab7c",
+            .url = "https://github.com/kcl-lang/tree-sitter-kcl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.bertbaron},
+        .tier = 2,
+    },
+    .{
+        .name = .kconfig,
+        .install = .{
+            .revision = "9ac99fe4c0c27a35dc6f757cef534c646e944881",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-kconfig",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .kdl,
+        .install = .{
+            .revision = "b37e3d58e5c5cf8d739b315d6114e02d42e66664",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-kdl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .kotlin,
+        .install = .{
+            .revision = "57fb4560ba8641865bc0baa6b3f413b236112c4c",
+            .url = "https://github.com/fwcd/tree-sitter-kotlin",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.SalBakraa},
+        .tier = 2,
+    },
+    .{
+        .name = .koto,
+        .install = .{
+            .revision = "633744bca404ae4edb961a3c2d7bc947a987afa4",
+            .url = "https://github.com/koto-lang/tree-sitter-koto",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.irh},
+        .tier = 2,
+    },
+    .{
+        .name = .kusto,
+        .install = .{
+            .revision = "8353a1296607d6ba33db7c7e312226e5fc83e8ce",
+            .url = "https://github.com/Willem-J-an/tree-sitter-kusto",
+        },
+        .maintainers = .{.@"Willem-J-an"},
+        .tier = 2,
+    },
+    .{
+        .name = .lalrpop,
+        .install = .{
+            .revision = "8d38e9755c05d37df8a24dadb0fc64f6588ac188",
+            .url = "https://github.com/traxys/tree-sitter-lalrpop",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.traxys},
+        .tier = 2,
+    },
+    .{
+        .name = .latex,
+        .install = .{
+            // .generate = .true,
+            .revision = "7e0ecdc02926c7b9b2e0c76003d4fe7b0944f957",
+            .needs_scanner = true,
+            .url = "https://github.com/latex-lsp/tree-sitter-latex",
+        },
+        .maintainers = .{ .theHamsta, .clason },
+        .tier = 2,
+    },
+    .{
+        .name = .ledger,
+        .install = .{
+            .revision = "96c92d4908a836bf8f661166721c98439f8afb80",
+            .url = "https://github.com/cbarrete/tree-sitter-ledger",
+        },
+        .maintainers = .{.cbarrete},
+        .tier = 2,
+    },
+    .{
+        .name = .leo,
+        .install = .{
+            .revision = "6bc5564917edacd070afc4d33cf5e2e677831ea9",
+            .url = "https://github.com/r001/tree-sitter-leo",
+        },
+        .maintainers = .{.r001},
+        .tier = 2,
+    },
+    .{
+        .name = .linkerscript,
+        .install = .{
+            .revision = "f99011a3554213b654985a4b0a65b3b032ec4621",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-linkerscript",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .liquid,
+        .install = .{
+            .revision = "d6ebde3974742cd1b61b55d1d94aab1dacb41056",
+            .url = "https://github.com/hankthetank27/tree-sitter-liquid",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.hankthetank27},
+        .tier = 2,
+    },
+    .{
+        .name = .liquidsoap,
+        .install = .{
+            .revision = "4de01f44de2c051c33832ce523cf44690561320d",
+            .url = "https://github.com/savonet/tree-sitter-liquidsoap",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.toots},
+        .tier = 2,
+    },
+    .{
+        .name = .llvm,
+        .install = .{
+            .revision = "2914786ae6774d4c4e25a230f4afe16aa68fe1c1",
+            .url = "https://github.com/benwilliamgraham/tree-sitter-llvm",
+        },
+        .maintainers = .{.benwilliamgraham},
+        .tier = 2,
+    },
+    .{
+        .name = .lua,
+        .install = .{
+            .revision = "d76023017f7485eae629cb60d406c7a1ca0f40c9",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-lua",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.muniftanjim},
+        .tier = 2,
+    },
+    .{
+        .name = .luadoc,
+        .install = .{
+            .revision = "873612aadd3f684dd4e631bdf42ea8990c57634e",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-luadoc",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .luap,
+        .install = .{
+            .revision = "c134aaec6acf4fa95fe4aa0dc9aba3eacdbbe55a",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-luap",
+        },
+        .maintainers = .{.amaanq},
+        // .readme_note = "Lua.patterns",
+        .tier = 2,
+    },
+    .{
+        .name = .luau,
+        .install = .{
+            .revision = "a8914d6c1fc5131f8e1c13f769fa704c9f5eb02f",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-luau",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        // .requires = .{"lua"},
+        .tier = 2,
+    },
+    .{
+        .name = .m68k,
+        .install = .{
+            .revision = "e128454c2210c0e0c10b68fe45ddb8fee80182a3",
+            .url = "https://github.com/grahambates/tree-sitter-m68k",
+        },
+        .maintainers = .{.grahambates},
+        .tier = 2,
+    },
+    .{
+        .name = .make,
+        .install = .{
+            .revision = "a4b9187417d6be349ee5fd4b6e77b4172c6827dd",
+            .url = "https://github.com/alemuller/tree-sitter-make",
+        },
+        .maintainers = .{.lewis6991},
+        .tier = 2,
+    },
+    .{
+        .name = .markdown,
+        .install = .{
+            .revision = "2dfd57f547f06ca5631a80f601e129d73fc8e9f0",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-markdown",
+            .needs_scanner = true,
+            .subpath = "tree-sitter-markdown",
+        },
+        .maintainers = .{.MDeiml},
+        // .readme_note = "basic.highlighting",
+        // .requires = .{"markdown_inline"},
+        .tier = 2,
+    },
+    .{
+        .name = .@"markdown-inline",
+        .install = .{
+            .revision = "2dfd57f547f06ca5631a80f601e129d73fc8e9f0",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-markdown",
+            .needs_scanner = true,
+            .subpath = "tree-sitter-markdown-inline",
+        },
+        .maintainers = .{.MDeiml},
+        // .readme_note = "needed.for.full.highlighting",
+        .tier = 2,
+    },
+    .{
+        .name = .matlab,
+        .install = .{
+            .revision = "96a3e8fb0a4ebd0db64db6b52043483937e9ca3a",
+            .url = "https://github.com/acristoffers/tree-sitter-matlab",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.acristoffers},
+        .tier = 2,
+    },
+    .{
+        .name = .menhir,
+        .install = .{
+            .revision = "be8866a6bcc2b563ab0de895af69daeffa88fe70",
+            .url = "https://github.com/Kerl13/tree-sitter-menhir",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.Kerl13},
+        .tier = 2,
+    },
+    .{
+        .name = .mermaid,
+        .install = .{
+            .revision = "90ae195b31933ceb9d079abfa8a3ad0a36fee4cc",
+            .url = "https://github.com/monaqa/tree-sitter-mermaid",
+        },
+        .maintainers = .{ .monaqa, .trongthanh, .bricka },
+        .tier = 2,
+    },
+    .{
+        .name = .meson,
+        .install = .{
+            .revision = "280b6e59186f18528bab1567f5cc43b78b9cd881",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-meson",
+        },
+        .maintainers = .{.Decodetalkers},
+        .tier = 2,
+    },
+    .{
+        .name = .mlir,
+        .install = .{
+            // .generate = .true,
+            .revision = "8f86b34b5e3dfe561e1e913df4a3d719ea1dcc5c",
+            .url = "https://github.com/artagnon/tree-sitter-mlir",
+        },
+        .maintainers = .{.artagnon},
+        .tier = 2,
+    },
+    .{
+        .name = .muttrc,
+        .install = .{
+            .revision = "173b0ab53a9c07962c9777189c4c70e90f1c1837",
+            .url = "https://github.com/neomutt/tree-sitter-muttrc",
+        },
+        .maintainers = .{.@"Freed-Wu"},
+        .tier = 2,
+    },
+    .{
+        .name = .nasm,
+        .install = .{
+            .revision = "d1b3638d017f2a8585e26dcfc66fe1df94185e30",
+            .url = "https://github.com/naclsn/tree-sitter-nasm",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .nginx,
+        .install = .{
+            .revision = "989da760be05a3334af3ec88705cbf57e6a9c41d",
+            .url = "https://github.com/opa-oz/tree-sitter-nginx",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"opa-oz"},
+        .tier = 2,
+    },
+    .{
+        .name = .nickel,
+        .install = .{
+            .revision = "a0a5d98a6f0edb5d00a18e62e7d1d02a5607c391",
+            .url = "https://github.com/nickel-lang/tree-sitter-nickel",
+            .needs_scanner = true,
+        },
+        .maintainers = .{},
+        .tier = 2,
+    },
+    .{
+        .name = .nim,
+        .install = .{
+            .revision = "4ad352773688deb84a95eeaa9872acda5b466439",
+            .url = "https://github.com/alaviss/tree-sitter-nim",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.aMOPel},
+        // .requires = .{"nim_format_string"},
+        .tier = 2,
+    },
+    .{
+        .name = .@"nim-format-string",
+        .install = .{
+            .revision = "d45f75022d147cda056e98bfba68222c9c8eca3a",
+            .url = "https://github.com/aMOPel/tree-sitter-nim-format-string",
+        },
+        .maintainers = .{.aMOPel},
+        .tier = 2,
+    },
+    .{
+        .name = .ninja,
+        .install = .{
+            .revision = "0a95cfdc0745b6ae82f60d3a339b37f19b7b9267",
+            .url = "https://github.com/alemuller/tree-sitter-ninja",
+        },
+        .maintainers = .{.alemuller},
+        .tier = 2,
+    },
+    .{
+        .name = .nix,
+        .install = .{
+            .revision = "ff4e2b4c5a3598e8be3edf16bc69f6677af32145",
+            .url = "https://github.com/nix-community/tree-sitter-nix",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .leo60228, .zimbatm },
+        .tier = 2,
+    },
+    .{
+        .name = .nqc,
+        .install = .{
+            .revision = "14e6da1627aaef21d2b2aa0c37d04269766dcc1d",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-nqc",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .nu,
+        .install = .{
+            .revision = "0e6c59c46db3c246eaf86ce5b325da1247e971a5",
+            .url = "https://github.com/nushell/tree-sitter-nu",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.abhisheksingh0x558},
+        .tier = 2,
+    },
+    .{
+        .name = .objc,
+        .install = .{
+            .revision = "181a81b8f23a2d593e7ab4259981f50122909fda",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-objc",
+        },
+        .maintainers = .{.amaanq},
+        // .requires = .{"c"},
+        .tier = 2,
+    },
+    .{
+        .name = .objdump,
+        .install = .{
+            .revision = "28d3b2e25a0b1881d1b47ed1924ca276c7003d45",
+            .url = "https://github.com/ColinKennedy/tree-sitter-objdump",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ColinKennedy},
+        .tier = 2,
+    },
+    .{
+        .name = .ocaml,
+        .install = .{
+            .revision = "3ef7c00b29e41e3a0c1d18e82ea37c64d72b93fc",
+            .url = "https://github.com/tree-sitter/tree-sitter-ocaml",
+            .needs_scanner = true,
+            .subpath = "grammars/ocaml",
+        },
+        .maintainers = .{.undu},
+        .tier = 2,
+    },
+    .{
+        .name = .@"ocaml-interface",
+        .install = .{
+            .revision = "3ef7c00b29e41e3a0c1d18e82ea37c64d72b93fc",
+            .url = "https://github.com/tree-sitter/tree-sitter-ocaml",
+            .needs_scanner = true,
+            .subpath = "grammars/interface",
+        },
+        .maintainers = .{.undu},
+        // .requires = .{"ocaml"},
+        .tier = 2,
+    },
+    .{
+        .name = .ocamllex,
+        .install = .{
+            // .generate = .true,
+            .revision = "ed488aa334d1b4e3235e1efaaf96f00815ebc0e0",
+            .needs_scanner = true,
+            .url = "https://github.com/atom-ocaml/tree-sitter-ocamllex",
+        },
+        .maintainers = .{.undu},
+        .tier = 2,
+    },
+    .{
+        .name = .odin,
+        .install = .{
+            .revision = "d2ca8efb4487e156a60d5bd6db2598b872629403",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-odin",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .pascal,
+        .install = .{
+            .revision = "5054931bcd022860dd5936864f981e359fb63aef",
+            .url = "https://github.com/Isopod/tree-sitter-pascal",
+        },
+        .maintainers = .{.Isopod},
+        .tier = 2,
+    },
+    .{
+        .name = .passwd,
+        .install = .{
+            .revision = "20239395eacdc2e0923a7e5683ad3605aee7b716",
+            .url = "https://github.com/ath3/tree-sitter-passwd",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .pem,
+        .install = .{
+            .revision = "e525b177a229b1154fd81bc0691f943028d9e685",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-pem",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    // TODO: branches
+    // .{
+    //     .name = .perl,
+    //     .install = .{
+    //         .revision = "0c24d001dd1921e418fb933d208a7bd7dd3f923a",
+    //         .url = "https://github.com/tree-sitter-perl/tree-sitter-perl",
+    //         .needs_scanner = true,
+    //         .branch = "release",
+    //     },
+    //     .maintainers = .{ .RabbiVeesh, .LeoNerd },
+    //     .tier = 2,
+    // },
+    .{
+        .name = .php,
+        .install = .{
+            .revision = "9a85df21c63bdaf1695b7ac1430e29354cb5904f",
+            .url = "https://github.com/tree-sitter/tree-sitter-php",
+            .needs_scanner = true,
+            .subpath = "php",
+        },
+        .maintainers = .{ .@"tk-shirasaka", .calebdw },
+        // .readme_note = "PHP.with.embedded.HTML",
+        // .requires = .{"php_only"},
+        .tier = 2,
+    },
+    .{
+        .name = .@"php-only",
+        .install = .{
+            .revision = "9a85df21c63bdaf1695b7ac1430e29354cb5904f",
+            .url = "https://github.com/tree-sitter/tree-sitter-php",
+            .needs_scanner = true,
+            .subpath = "php_only",
+        },
+        .maintainers = .{ .@"tk-shirasaka", .calebdw },
+        // .readme_note = "PHP.without.embedded.HTML",
+        .tier = 2,
+    },
+    .{
+        .name = .phpdoc,
+        .install = .{
+            .revision = "03bb10330704b0b371b044e937d5cc7cd40b4999",
+            .url = "https://github.com/claytonrcarter/tree-sitter-phpdoc",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.mikehaertl},
+        .tier = 2,
+    },
+    .{
+        .name = .pioasm,
+        .install = .{
+            .revision = "afece58efdb30440bddd151ef1347fa8d6f744a9",
+            .url = "https://github.com/leo60228/tree-sitter-pioasm",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.leo60228},
+        .tier = 2,
+    },
+    .{
+        .name = .pkl,
+        .install = .{
+            .revision = "d62e832b69a0aa3d4f87fc34ba62d931d6c23f55",
+            .url = "https://github.com/apple/tree-sitter-pkl",
+        },
+        .maintainers = .{.ribru17},
+        .tier = 2,
+    },
+    .{
+        .name = .po,
+        .install = .{
+            .revision = "bd860a0f57f697162bf28e576674be9c1500db5e",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-po",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    // TODO: branches
+    // .{
+    //     .name = .pod,
+    //     .install = .{
+    //         .branch = "release",
+    //         .revision = "0bf8387987c21bf2f8ed41d2575a8f22b139687f",
+    //         .needs_scanner = true,
+    //         .url = "https://github.com/tree-sitter-perl/tree-sitter-pod",
+    //     },
+    //     .maintainers = .{ .RabbiVeesh, .LeoNerd },
+    //     .tier = 2,
+    // },
+    .{
+        .name = .@"poe-filter",
+        .install = .{
+            .revision = "205a7d576984feb38a9fc2d8cfe729617f9e0548",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-poe-filter",
+        },
+        .maintainers = .{.ObserverOfTime},
+        // .readme_note = "Path.of.Exile.item.filter",
+        .tier = 2,
+    },
+    .{
+        .name = .pony,
+        .install = .{
+            .revision = "73ff874ae4c9e9b45462673cbc0a1e350e2522a7",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-pony",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .amaanq, .mfelsche },
+        .tier = 2,
+    },
+    .{
+        .name = .powershell,
+        .install = .{
+            .revision = "f272e5ac9bc48d0f6df2429cab914d216e9413cd",
+            .url = "https://github.com/airbus-cert/tree-sitter-powershell",
+            .needs_scanner = true,
+        },
+        // .filetype = "ps1",
+        .maintainers = .{.L2jLiga},
+        .tier = 2,
+    },
+    .{
+        .name = .printf,
+        .install = .{
+            .revision = "ec4e5674573d5554fccb87a887c97d4aec489da7",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-printf",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .prisma,
+        .install = .{
+            .revision = "73f39a6d5401cfdcd143951e499336cf5ab2ffaa",
+            .url = "https://github.com/victorhqc/tree-sitter-prisma",
+        },
+        .maintainers = .{.elianiva},
+        .tier = 2,
+    },
+    .{
+        .name = .problog,
+        .install = .{
+            .revision = "d8d415f6a1cf80ca138524bcc395810b176d40fa",
+            .url = "https://github.com/foxyseta/tree-sitter-prolog",
+            .subpath = "grammars/problog",
+        },
+        .maintainers = .{.foxyseta},
+        // .requires = .{"prolog"},
+        .tier = 2,
+    },
+    .{
+        .name = .prolog,
+        .install = .{
+            .revision = "d8d415f6a1cf80ca138524bcc395810b176d40fa",
+            .url = "https://github.com/foxyseta/tree-sitter-prolog",
+            .subpath = "grammars/prolog",
+        },
+        .maintainers = .{.foxyseta},
+        .tier = 2,
+    },
+    .{
+        .name = .promql,
+        .install = .{
+            .revision = "77625d78eebc3ffc44d114a07b2f348dff3061b0",
+            .url = "https://github.com/MichaHoffmann/tree-sitter-promql",
+        },
+        .maintainers = .{.MichaHoffmann},
+        .tier = 2,
+    },
+    .{
+        .name = .properties,
+        .install = .{
+            .revision = "6310671b24d4e04b803577b1c675d765cbd5773b",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-properties",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ObserverOfTime},
+        // .readme_note = "Java.properties.files",
+        .tier = 2,
+    },
+    .{
+        .name = .proto,
+        .install = .{
+            .revision = "e9f6b43f6844bd2189b50a422d4e2094313f6aa3",
+            .url = "https://github.com/treywood/tree-sitter-proto",
+        },
+        .maintainers = .{.treywood},
+        .tier = 2,
+    },
+    .{
+        .name = .prql,
+        .install = .{
+            .revision = "09e158cd3650581c0af4c49c2e5b10c4834c8646",
+            .url = "https://github.com/PRQL/tree-sitter-prql",
+        },
+        .maintainers = .{.@"matthias-Q"},
+        .tier = 2,
+    },
+    .{
+        .name = .psv,
+        .install = .{
+            .revision = "7eb7297823605392d2bbcc4c09b1cd18d6fa9529",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-csv",
+            .subpath = "psv",
+        },
+        .maintainers = .{.amaanq},
+        // .requires = .{"tsv"},
+        .tier = 2,
+    },
+    .{
+        .name = .pug,
+        .install = .{
+            .revision = "13e9195370172c86a8b88184cc358b23b677cc46",
+            .url = "https://github.com/zealot128/tree-sitter-pug",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.zealot128},
+        .tier = 2,
+    },
+    .{
+        .name = .puppet,
+        .install = .{
+            .revision = "15f192929b7d317f5914de2b4accd37b349182a6",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-puppet",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .purescript,
+        .install = .{
+            .revision = "f541f95ffd6852fbbe88636317c613285bc105af",
+            .url = "https://github.com/postsolar/tree-sitter-purescript",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.postsolar},
+        .tier = 2,
+    },
+    .{
+        .name = .pymanifest,
+        .install = .{
+            .revision = "debbdb83fe6356adc7261c41c69b45ba49c97294",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-pymanifest",
+        },
+        .maintainers = .{.ObserverOfTime},
+        // .readme_name = "PyPA.manifest",
+        .tier = 2,
+    },
+    .{
+        .name = .python,
+        .install = .{
+            .revision = "v0.25.0",
+            .url = "https://github.com/tree-sitter/tree-sitter-python",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .stsewd, .theHamsta },
+        .tier = 1,
+    },
+    .{
+        .name = .ql,
+        .install = .{
+            .revision = "1fd627a4e8bff8c24c11987474bd33112bead857",
+            .url = "https://github.com/tree-sitter/tree-sitter-ql",
+        },
+        .maintainers = .{.pwntester},
+        .tier = 2,
+    },
+    .{
+        .name = .qmldir,
+        .install = .{
+            .revision = "6b2b5e41734bd6f07ea4c36ac20fb6f14061c841",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-qmldir",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .qmljs,
+        .install = .{
+            .revision = "0889da4632bba3ec6f39ef4102625654890c15c1",
+            .url = "https://github.com/yuja/tree-sitter-qmljs",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.Decodetalkers},
+        // .requires = .{"ecma"},
+        .tier = 2,
+    },
+    .{
+        .name = .query,
+        .install = .{
+            .revision = "60e253d3c9d6b1131a0f75c85e4bdcc9a48d5b42",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-query",
+        },
+        .maintainers = .{.steelsojka},
+        // .readme_note = "Tree-sitter.query.language",
+        .tier = 2,
+    },
+    .{
+        .name = .r,
+        .install = .{
+            .revision = "0e6ef7741712c09dc3ee6e81c42e919820cc65ef",
+            .url = "https://github.com/r-lib/tree-sitter-r",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ribru17},
+        .tier = 2,
+    },
+    .{
+        .name = .racket,
+        .install = .{
+            .revision = "6d63a202602eb350e726b5e7814127ba22ed25fc",
+            .url = "https://github.com/6cdh/tree-sitter-racket",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"6cdh"},
+        .tier = 2,
+    },
+    .{
+        .name = .ralph,
+        .install = .{
+            .revision = "f6d81bf7a4599c77388035439cf5801cd461ff77",
+            .url = "https://github.com/alephium/tree-sitter-ralph",
+        },
+        .maintainers = .{.tdroxler},
+        .tier = 2,
+    },
+    .{
+        .name = .rasi,
+        .install = .{
+            .revision = "e735c6881d8b475aaa4ef8f0a2bdfd825b438143",
+            .url = "https://github.com/Fymyte/tree-sitter-rasi",
+        },
+        .maintainers = .{.Fymyte},
+        .tier = 2,
+    },
+    .{
+        .name = .razor,
+        .install = .{
+            .revision = "fe46ce5ea7d844e53d59bc96f2175d33691c61c5",
+            .url = "https://github.com/tris203/tree-sitter-razor",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.tris203},
+        .tier = 2,
+    },
+    .{
+        .name = .rbs,
+        .install = .{
+            .revision = "de893b166476205b09e79cd3689f95831269579a",
+            .url = "https://github.com/joker1007/tree-sitter-rbs",
+        },
+        .maintainers = .{.joker1007},
+        .tier = 2,
+    },
+    .{
+        .name = .re2c,
+        .install = .{
+            .revision = "c18a3c2f4b6665e35b7e50d6048ea3cff770c572",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-re2c",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .readline,
+        .install = .{
+            .revision = "74addc90fc539d31d413c0c7cf7581997a7fa46e",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-readline",
+        },
+        .maintainers = .{.ribru17},
+        .tier = 2,
+    },
+    .{
+        .name = .regex,
+        .install = .{
+            .revision = "b2ac15e27fce703d2f37a79ccd94a5c0cbe9720b",
+            .url = "https://github.com/tree-sitter/tree-sitter-regex",
+        },
+        .maintainers = .{.theHamsta},
+        .tier = 2,
+    },
+    .{
+        .name = .rego,
+        .install = .{
+            .revision = "20b5a5958c837bc9f74b231022a68a594a313f6d",
+            .url = "https://github.com/FallenAngel97/tree-sitter-rego",
+        },
+        .maintainers = .{.FallenAngel97},
+        .tier = 2,
+    },
+    .{
+        .name = .requirements,
+        .install = .{
+            .revision = "caeb2ba854dea55931f76034978de1fd79362939",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-requirements",
+        },
+        .maintainers = .{.ObserverOfTime},
+        // .readme_name = "pip.requirements",
+        .tier = 2,
+    },
+    .{
+        .name = .rescript,
+        .install = .{
+            .revision = "d2df8a285fff95de56a91d2f8152aeceb66f40ef",
+            .url = "https://github.com/rescript-lang/tree-sitter-rescript",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ribru17},
+        .tier = 2,
+    },
+    .{
+        .name = .rifleconf,
+        .install = .{
+            .revision = "b215640ba72a9a8cac6f5d95dbc3d320cb546e13",
+            .url = "https://github.com/purarue/tree-sitter-rifleconf",
+        },
+        .maintainers = .{.purarue},
+        .tier = 2,
+    },
+    .{
+        .name = .rnoweb,
+        .install = .{
+            .revision = "1a74dc0ed731ad07db39f063e2c5a6fe528cae7f",
+            .url = "https://github.com/bamonroe/tree-sitter-rnoweb",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.bamonroe},
+        .tier = 2,
+    },
+    .{
+        .name = .robot,
+        .install = .{
+            .revision = "e34def7cb0d8a66a59ec5057fe17bb4e6b17b56a",
+            .url = "https://github.com/Hubro/tree-sitter-robot",
+        },
+        .maintainers = .{.Hubro},
+        .tier = 2,
+    },
+    .{
+        .name = .robots,
+        .install = .{
+            .revision = "8e3a4205b76236bb6dbebdbee5afc262ce38bb62",
+            .url = "https://github.com/opa-oz/tree-sitter-robots-txt",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"opa-oz"},
+        .tier = 2,
+    },
+    .{
+        .name = .roc,
+        .install = .{
+            .revision = "40e52f343f1b1f270d6ecb2ca898ca9b8cba6936",
+            .url = "https://github.com/faldor20/tree-sitter-roc",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"nat-418"},
+        .tier = 2,
+    },
+    .{
+        .name = .ron,
+        .install = .{
+            .revision = "78938553b93075e638035f624973083451b29055",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ron",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .rst,
+        .install = .{
+            .revision = "4e562e1598b95b93db4f3f64fe40ddefbc677a15",
+            .url = "https://github.com/stsewd/tree-sitter-rst",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.stsewd},
+        .tier = 2,
+    },
+    .{
+        .name = .ruby,
+        .install = .{
+            .revision = "89bd7a8e5450cb6a942418a619d30469f259e5d6",
+            .url = "https://github.com/tree-sitter/tree-sitter-ruby",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.TravonteD},
+        .tier = 2,
+    },
+    .{
+        .name = .runescript,
+        .install = .{
+            .revision = "cf85bbd5da0c5ad243301d889c7f84d790a4cae4",
+            .url = "https://github.com/2004Scape/tree-sitter-runescript",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"2004Scape"},
+        .tier = 2,
+    },
+    .{
+        .name = .rust,
+        .install = .{
+            .revision = "00d7cbc95f0b8ea2703129550fbd1853a13e0e29",
+            .url = "https://github.com/tree-sitter/tree-sitter-rust",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .scala,
+        .install = .{
+            .revision = "97aead18d97708190a51d4f551ea9b05b60641c9",
+            .url = "https://github.com/tree-sitter/tree-sitter-scala",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.stevanmilic},
+        .tier = 2,
+    },
+    .{
+        .name = .scfg,
+        .install = .{
+            // .generate = .true,
+            // .generate_from_json = .false,
+            .revision = "2f3709e7656fa2c443f92041c91a9f843f8cd625",
+            .url = "https://github.com/rockorager/tree-sitter-scfg",
+        },
+        .maintainers = .{.WhyNotHugo},
+        .tier = 2,
+    },
+    .{
+        .name = .scheme,
+        .install = .{
+            .revision = "67b5c8d6ce19fd5265f13204fec0a3efa9e095d9",
+            .url = "https://github.com/6cdh/tree-sitter-scheme",
+        },
+        .maintainers = .{.@"6cdh"},
+        .tier = 2,
+    },
+    .{
+        .name = .scss,
+        .install = .{
+            .revision = "c478c6868648eff49eb04a4df90d703dc45b312a",
+            .url = "https://github.com/serenadeai/tree-sitter-scss",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.elianiva},
+        // .requires = .{"css"},
+        .tier = 2,
+    },
+    .{
+        .name = .sflog,
+        .install = .{
+            .revision = "3597575a429766dd7ecce9f5bb97f6fec4419d5d",
+            .url = "https://github.com/aheber/tree-sitter-sfapex",
+            .subpath = "sflog",
+        },
+        .maintainers = .{ .aheber, .xixiaofinland },
+        // .readme_note = "Salesforce.debug.log",
+        .tier = 2,
+    },
+    .{
+        .name = .slang,
+        .install = .{
+            .revision = "1dbcc4abc7b3cdd663eb03d93031167d6ed19f56",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-slang",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.theHamsta},
+        // .readme_note = "Shader.Slang",
+        .tier = 2,
+    },
+    .{
+        .name = .slim,
+        .install = .{
+            .revision = "a06113f5175b805a37d20df0a6f9d722e0ab6cfe",
+            .url = "https://github.com/theoo/tree-sitter-slim",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.theoo},
+        .tier = 2,
+    },
+    .{
+        .name = .slint,
+        .install = .{
+            .revision = "152ec7f6a2aa29fe222f741d91bec70153c487da",
+            .url = "https://github.com/slint-ui/tree-sitter-slint",
+        },
+        .maintainers = .{.hunger},
+        .tier = 2,
+    },
+    .{
+        .name = .smali,
+        .install = .{
+            .revision = "fdfa6a1febc43c7467aa7e937b87b607956f2346",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-smali",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .smithy,
+        .install = .{
+            .revision = "ec4fe14586f2b0a1bc65d6db17f8d8acd8a90433",
+            .url = "https://github.com/indoorvivants/tree-sitter-smithy",
+        },
+        .maintainers = .{ .amaanq, .keynmol },
+        .tier = 2,
+    },
+    .{
+        .name = .snakemake,
+        .install = .{
+            .revision = "68010430c3e51c0e84c1ce21c6551df0e2469f51",
+            .url = "https://github.com/osthomas/tree-sitter-snakemake",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.osthomas},
+        .tier = 2,
+    },
+    .{
+        .name = .snl,
+        .install = .{
+            .url = "https://github.com/minijackson/tree-sitter-snl",
+            .revision = "846e2d6809ac5863a15b5494f20fd267c21221c8",
+        },
+        .maintainers = .{.minijackson},
+        .tier = 2,
+    },
+    .{
+        .name = .solidity,
+        .install = .{
+            .revision = "4e938a46c7030dd001bc99e1ac0f0c750ac98254",
+            .url = "https://github.com/JoranHonig/tree-sitter-solidity",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .soql,
+        .install = .{
+            .revision = "3597575a429766dd7ecce9f5bb97f6fec4419d5d",
+            .url = "https://github.com/aheber/tree-sitter-sfapex",
+            .subpath = "soql",
+        },
+        .maintainers = .{ .aheber, .xixiafinland },
+        .tier = 2,
+    },
+    .{
+        .name = .sosl,
+        .install = .{
+            .revision = "3597575a429766dd7ecce9f5bb97f6fec4419d5d",
+            .url = "https://github.com/aheber/tree-sitter-sfapex",
+            .subpath = "sosl",
+        },
+        .maintainers = .{ .aheber, .xixiafinland },
+        .tier = 2,
+    },
+    .{
+        .name = .sourcepawn,
+        .install = .{
+            .revision = "5a8fdd446b516c81e218245c12129c6ad4bccfa2",
+            .url = "https://github.com/nilshelmig/tree-sitter-sourcepawn",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.Sarrus1},
+        .tier = 2,
+    },
+    .{
+        .name = .sparql,
+        .install = .{
+            .revision = "d853661ca680d8ff7f8d800182d5782b61d0dd58",
+            .url = "https://github.com/GordianDziwis/tree-sitter-sparql",
+        },
+        .maintainers = .{.GordianDziwis},
+        .tier = 2,
+    },
+    .{
+        .name = .sproto,
+        .install = .{
+            .revision = "d554c1456e35e7b2690552d52921c987d0cf6799",
+            .url = "https://github.com/hanxi/tree-sitter-sproto",
+        },
+        .maintainers = .{.hanxi},
+        .tier = 2,
+    },
+    // TODO: branches
+    // .{
+    //     .name = .sql,
+    //     .install = .{
+    //         .revision = "b1ec2aa5091624e4729f0a771a6d631afebf1ed4",
+    //         .url = "https://github.com/derekstride/tree-sitter-sql",
+    //         .needs_scanner = true,
+    //         .branch = "gh-pages",
+    //     },
+    //     .maintainers = .{.derekstride},
+    //     .tier = 2,
+    // },
+    .{
+        .name = .squirrel,
+        .install = .{
+            .revision = "072c969749e66f000dba35a33c387650e203e96e",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-squirrel",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .@"ssh-config",
+        .install = .{
+            .revision = "71d2693deadaca8cdc09e38ba41d2f6042da1616",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ssh-config",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .starlark,
+        .install = .{
+            .revision = "a453dbf3ba433db0e5ec621a38a7e59d72e4dc69",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-starlark",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .strace,
+        .install = .{
+            .revision = "d819cdd5dbe455bd3c859193633c8d91c0df7c36",
+            .url = "https://github.com/sigmaSd/tree-sitter-strace",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .styled,
+        .install = .{
+            .revision = "319cdcaa0346ba6db668a222d938e5c3569e2a51",
+            .url = "https://github.com/mskelton/tree-sitter-styled",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.mskelton},
+        .tier = 2,
+    },
+    .{
+        .name = .supercollider,
+        .install = .{
+            .revision = "76b3cab1773f08bb7d3a185420b0a44c6da8c294",
+            .url = "https://github.com/madskjeldgaard/tree-sitter-supercollider",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.madskjeldgaard},
+        .tier = 2,
+    },
+    .{
+        .name = .superhtml,
+        .install = .{
+            .revision = "574a7a000c6e6a8a922c11afa9da60dca84e5e1f",
+            .url = "https://github.com/kristoff-it/superhtml",
+            .needs_scanner = true,
+            .subpath = "tree-sitter-superhtml",
+        },
+        .maintainers = .{.rockorager},
+        .tier = 2,
+    },
+    .{
+        .name = .surface,
+        .install = .{
+            .revision = "f4586b35ac8548667a9aaa4eae44456c1f43d032",
+            .url = "https://github.com/connorlay/tree-sitter-surface",
+        },
+        .maintainers = .{.connorlay},
+        .tier = 2,
+    },
+    .{
+        .name = .svelte,
+        .install = .{
+            .revision = "ae5199db47757f785e43a14b332118a5474de1a2",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-svelte",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        // .requires = .{"html_tags"},
+        .tier = 2,
+    },
+    .{
+        .name = .sway,
+        .install = .{
+            .revision = "9b7845ce06ecb38b040c3940970b4fd0adc331d1",
+            .url = "https://github.com/FuelLabs/tree-sitter-sway.git",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ribru17},
+        .tier = 2,
+    },
+    .{
+        .name = .swift,
+        .install = .{
+            // .generate = .true,
+            .revision = "78d84ef82c387fceeb6094038da28717ea052e39",
+            .needs_scanner = true,
+            .url = "https://github.com/alex-pinkus/tree-sitter-swift",
+        },
+        .maintainers = .{.@"alex-pinkus"},
+        .tier = 2,
+    },
+    .{
+        .name = .sxhkdrc,
+        .install = .{
+            .revision = "440d5f913d9465c9c776a1bd92334d32febcf065",
+            .url = "https://github.com/RaafatTurki/tree-sitter-sxhkdrc",
+        },
+        .maintainers = .{.RaafatTurki},
+        .tier = 2,
+    },
+    .{
+        .name = .systemtap,
+        .install = .{
+            .revision = "f2b378a9af0b7e1192cff67a5fb45508c927205d",
+            .url = "https://github.com/ok-ryoko/tree-sitter-systemtap",
+        },
+        .maintainers = .{.@"ok-ryoko"},
+        .tier = 2,
+    },
+    .{
+        .name = .systemverilog,
+        .install = .{
+            .revision = "9e06a0dddbef4e80a2091fd0a772cc93a55019f7",
+            .url = "https://github.com/gmlarumbe/tree-sitter-systemverilog",
+        },
+        .maintainers = .{.zhangwwpeng},
+        .tier = 2,
+    },
+    .{
+        .name = .t32,
+        .install = .{
+            .revision = "335e5533de72a4ac8c6763958df1befbdc855a30",
+            .url = "https://gitlab.com/xasc/tree-sitter-t32",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.xasc},
+        .tier = 2,
+    },
+    .{
+        .name = .tablegen,
+        .install = .{
+            .revision = "b1170880c61355aaf38fc06f4af7d3c55abdabc4",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-tablegen",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .tact,
+        .install = .{
+            .revision = "a6267c2091ed432c248780cec9f8d42c8766d9ad",
+            .url = "https://github.com/tact-lang/tree-sitter-tact",
+        },
+        .maintainers = .{.novusnota},
+        .tier = 2,
+    },
+    .{
+        .name = .tcl,
+        .install = .{
+            .revision = "8f11ac7206a54ed11210491cee1e0657e2962c47",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-tcl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.lewis6991},
+        .tier = 2,
+    },
+    .{
+        .name = .teal,
+        .install = .{
+            .url = "https://github.com/euclidianAce/tree-sitter-teal",
+            .revision = "05d276e737055e6f77a21335b7573c9d3c091e2f",
+            .needs_scanner = true,
+            // .generate = .true,
+        },
+        .maintainers = .{.euclidianAce},
+        .tier = 2,
+    },
+    .{
+        .name = .templ,
+        .install = .{
+            .revision = "27a1fc62c8dd4c49669e03629491f66449c6c435",
+            .url = "https://github.com/vrischmann/tree-sitter-templ",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.vrischmann},
+        .tier = 2,
+    },
+    .{
+        .name = .tera,
+        .install = .{
+            .revision = "692937d52c8dfd91ce0dde722b9b4febbc9bc712",
+            .url = "https://github.com/uncenter/tree-sitter-tera",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.uncenter},
+        .tier = 2,
+    },
+    .{
+        .name = .terraform,
+        .install = .{
+            .revision = "fad991865fee927dd1de5e172fb3f08ac674d914",
+            .url = "https://github.com/MichaHoffmann/tree-sitter-hcl",
+            .needs_scanner = true,
+            .subpath = "dialects/terraform",
+        },
+        .maintainers = .{.MichaHoffmann},
+        // .requires = .{"hcl"},
+        .tier = 2,
+    },
+    .{
+        .name = .textproto,
+        .install = .{
+            .revision = "568471b80fd8793d37ed01865d8c2208a9fefd1b",
+            .url = "https://github.com/PorterAtGoogle/tree-sitter-textproto",
+        },
+        .maintainers = .{.Porter},
+        .tier = 2,
+    },
+    .{
+        .name = .thrift,
+        .install = .{
+            .revision = "68fd0d80943a828d9e6f49c58a74be1e9ca142cf",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-thrift",
+        },
+        .maintainers = .{ .amaanq, .duskmoon314 },
+        .tier = 2,
+    },
+    .{
+        .name = .tiger,
+        .install = .{
+            .revision = "4a77b2d7a004587646bddc4e854779044b6db459",
+            .url = "https://github.com/ambroisie/tree-sitter-tiger",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.ambroisie},
+        .tier = 2,
+    },
+    .{
+        .name = .tlaplus,
+        .install = .{
+            .revision = "2d831940c782850f64dabf5b7b17e9e51f7f0ebb",
+            .url = "https://github.com/tlaplus-community/tree-sitter-tlaplus",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .ahelwer, .susliko },
+        .tier = 2,
+    },
+    .{
+        .name = .tmux,
+        .install = .{
+            .revision = "0252ecd080016e45e6305ef1a943388f5ae2f4b4",
+            .url = "https://github.com/Freed-Wu/tree-sitter-tmux",
+        },
+        .maintainers = .{.@"Freed-Wu"},
+        .tier = 2,
+    },
+    .{
+        .name = .todotxt,
+        .install = .{
+            .revision = "3937c5cd105ec4127448651a21aef45f52d19609",
+            .url = "https://github.com/arnarg/tree-sitter-todotxt",
+        },
+        .maintainers = .{.arnarg},
+        .tier = 2,
+    },
+    .{
+        .name = .toml,
+        .install = .{
+            .revision = "64b56832c2cffe41758f28e05c756a3a98d16f41",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-toml",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.@"tk-shirasaka"},
+        .tier = 2,
+    },
+    .{
+        .name = .tsv,
+        .install = .{
+            .revision = "7eb7297823605392d2bbcc4c09b1cd18d6fa9529",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-csv",
+            .subpath = "tsv",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .tsx,
+        .install = .{
+            .revision = "75b3874edb2dc714fb1fd77a32013d0f8699989f",
+            .url = "https://github.com/tree-sitter/tree-sitter-typescript",
+            .needs_scanner = true,
+            .subpath = "tsx",
+        },
+        .maintainers = .{.steelsojka},
+        // .requires = .{ "ecma", "jsx", "typescript" },
+        .tier = 2,
+    },
+    .{
+        .name = .turtle,
+        .install = .{
+            .revision = "7f789ea7ef765080f71a298fc96b7c957fa24422",
+            .url = "https://github.com/GordianDziwis/tree-sitter-turtle",
+        },
+        .maintainers = .{.GordianDziwis},
+        .tier = 2,
+    },
+    .{
+        .name = .twig,
+        .install = .{
+            .revision = "7195ee573ab5c3b3bb0e91b042e6f83ac1b11104",
+            .url = "https://github.com/gbprod/tree-sitter-twig",
+        },
+        .maintainers = .{.gbprod},
+        .tier = 2,
+    },
+    .{
+        .name = .typescript,
+        .install = .{
+            .revision = "75b3874edb2dc714fb1fd77a32013d0f8699989f",
+            .url = "https://github.com/tree-sitter/tree-sitter-typescript",
+            .needs_scanner = true,
+            .subpath = "typescript",
+        },
+        .maintainers = .{.steelsojka},
+        // .requires = .{"ecma"},
+        .tier = 2,
+    },
+    .{
+        .name = .typespec,
+        .install = .{
+            .revision = "814c98283fd92a248ba9d49ebfe61bc672a35875",
+            .url = "https://github.com/happenslol/tree-sitter-typespec",
+        },
+        .maintainers = .{.happenslol},
+        .tier = 2,
+    },
+    .{
+        .name = .typoscript,
+        .install = .{
+            .revision = "5d8fde870b0ded1f429ba5bb249a9d9f8589ff5f",
+            .url = "https://github.com/Teddytrombone/tree-sitter-typoscript",
+        },
+        .maintainers = .{.Teddytrombone},
+        .tier = 2,
+    },
+    .{
+        .name = .typst,
+        .install = .{
+            .revision = "46cf4ded12ee974a70bf8457263b67ad7ee0379d",
+            .url = "https://github.com/uben0/tree-sitter-typst",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .uben0, .RaafatTurki },
+        .tier = 2,
+    },
+    .{
+        .name = .udev,
+        .install = .{
+            .revision = "2fcb563a4d56a6b8e8c129252325fc6335e4acbf",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-udev",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .ungrammar,
+        .install = .{
+            .revision = "debd26fed283d80456ebafa33a06957b0c52e451",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ungrammar",
+        },
+        .maintainers = .{ .@"Philipp-M", .amaanq },
+        .tier = 2,
+    },
+    .{
+        .name = .unison,
+        .install = .{
+            .revision = "169e7f748a540ec360c0cb086b448faad012caa4",
+            .url = "https://github.com/kylegoetz/tree-sitter-unison",
+            .needs_scanner = true,
+            // .generate = .true,
+        },
+        .maintainers = .{.tapegram},
+        .tier = 2,
+    },
+    .{
+        .name = .usd,
+        .install = .{
+            .revision = "4e0875f724d94d0c2ff36f9b8cb0b12f8b20d216",
+            .url = "https://github.com/ColinKennedy/tree-sitter-usd",
+        },
+        .maintainers = .{.ColinKennedy},
+        .tier = 2,
+    },
+    .{
+        .name = .uxntal,
+        .install = .{
+            .revision = "ad9b638b914095320de85d59c49ab271603af048",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-uxntal",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .v,
+        .install = .{
+            .revision = "236d51bba1bccd57fd2950956fbffe5fe0248735",
+            .url = "https://github.com/vlang/v-analyzer",
+            .subpath = "tree_sitter_v",
+        },
+        .maintainers = .{ .kkharji, .amaanq },
+        .tier = 2,
+    },
+    .{
+        .name = .vala,
+        .install = .{
+            .revision = "97e6db3c8c73b15a9541a458d8e797a07f588ef4",
+            .url = "https://github.com/vala-lang/tree-sitter-vala",
+        },
+        .maintainers = .{.Prince781},
+        .tier = 2,
+    },
+    .{
+        .name = .vento,
+        .install = .{
+            .revision = "3b32474bc29584ea214e4e84b47102408263fe0e",
+            .url = "https://github.com/ventojs/tree-sitter-vento",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .wrapperup, .oscarotero },
+        .tier = 2,
+    },
+    .{
+        .name = .vhdl,
+        .install = .{
+            .revision = "0c25aa064dc489ec5291e4879fa7ed41cf5fe680",
+            .url = "https://github.com/jpt13653903/tree-sitter-vhdl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.jpt13653903},
+        .tier = 2,
+    },
+    .{
+        .name = .vhs,
+        .install = .{
+            .revision = "0c6fae9d2cfc5b217bfd1fe84a7678f5917116db",
+            .url = "https://github.com/charmbracelet/tree-sitter-vhs",
+        },
+        .maintainers = .{.caarlos0},
+        .tier = 2,
+    },
+    .{
+        .name = .vim,
+        .install = .{
+            .revision = "3dd4747082d1b717b8978211c06ef7b6cd16125b",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-vim",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.clason},
+        .tier = 2,
+    },
+    .{
+        .name = .vimdoc,
+        .install = .{
+            .revision = "ffa29e863738adfc1496717c4acb7aae92a80ed4",
+            .url = "https://github.com/neovim/tree-sitter-vimdoc",
+        },
+        .maintainers = .{.clason},
+        .tier = 2,
+    },
+    .{
+        .name = .vrl,
+        .install = .{
+            .revision = "274b3ce63f72aa8ffea18e7fc280d3062d28f0ba",
+            .url = "https://github.com/belltoy/tree-sitter-vrl",
+        },
+        .maintainers = .{.belltoy},
+        .tier = 2,
+    },
+    // TODO: branches
+    // .{
+    //     .name = .vue,
+    //     .install = .{
+    //         .revision = "22bdfa6c9fc0f5ffa44c6e938ec46869ac8a99ff",
+    //         .url = "https://github.com/tree-sitter-grammars/tree-sitter-vue",
+    //         .needs_scanner = true,
+    //         .branch = "main",
+    //     },
+    //     .maintainers = .{ .WhyNotHugo, .lucario387 },
+    //     // .requires = .{"html_tags"},
+    //     .tier = 2,
+    // },
+    .{
+        .name = .wgsl,
+        .install = .{
+            .revision = "40259f3c77ea856841a4e0c4c807705f3e4a2b65",
+            .url = "https://github.com/szebniok/tree-sitter-wgsl",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.szebniok},
+        .tier = 2,
+    },
+    .{
+        .name = .@"wgsl-bevy",
+        .install = .{
+            .revision = "d9306a798ede627001a8e5752f775858c8edd7e4",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-wgsl-bevy",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.theHamsta},
+        .tier = 2,
+    },
+    .{
+        .name = .wing,
+        .install = .{
+            .revision = "76e0c25844a66ebc6e866d690fcc5f4e90698947",
+            .url = "https://github.com/winglang/tree-sitter-wing",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .gshpychka, .MarkMcCulloh },
+        .tier = 2,
+    },
+    .{
+        .name = .wit,
+        .install = .{
+            .revision = "8fd7cfd90be29b363922b2e09bf6a7db50de04a8",
+            .url = "https://github.com/bytecodealliance/tree-sitter-wit",
+        },
+        .maintainers = .{.mkatychev},
+        .tier = 2,
+    },
+    .{
+        .name = .wxml,
+        .install = .{
+            .revision = "7b821c748dc410332f59496c0dea2632168c4e5a",
+            .url = "https://github.com/BlockLune/tree-sitter-wxml",
+        },
+        .maintainers = .{.BlockLune},
+        .tier = 2,
+    },
+    .{
+        .name = .xcompose,
+        .install = .{
+            .revision = "a51d6366f041dbefec4da39a7eb3168a9b1cbc0e",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-xcompose",
+        },
+        .maintainers = .{.ObserverOfTime},
+        .tier = 2,
+    },
+    .{
+        .name = .xml,
+        .install = .{
+            .revision = "863dbc381f44f6c136a399e684383b977bb2beaa",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-xml",
+            .needs_scanner = true,
+            .subpath = "xml",
+        },
+        .maintainers = .{.ObserverOfTime},
+        // .requires = .{"dtd"},
+        .tier = 2,
+    },
+    .{
+        .name = .xresources,
+        .install = .{
+            .revision = "2259ae28ad0e139b726dab286f7fa9626a1c2256",
+            .url = "https://github.com/ValdezFOmar/tree-sitter-xresources",
+        },
+        .maintainers = .{.ValdezFOmar},
+        .tier = 2,
+    },
+    .{
+        .name = .yaml,
+        .install = .{
+            .revision = "3431ec21da1dde751bab55520963cf3a4f1121f3",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-yaml",
+            .needs_scanner = true,
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .yang,
+        .install = .{
+            .revision = "2c0e6be8dd4dcb961c345fa35c309ad4f5bd3502",
+            .url = "https://github.com/Hubro/tree-sitter-yang",
+        },
+        .maintainers = .{.Hubro},
+        .tier = 2,
+    },
+    .{
+        .name = .yuck,
+        .install = .{
+            .revision = "e877f6ade4b77d5ef8787075141053631ba12318",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-yuck",
+            .needs_scanner = true,
+        },
+        .maintainers = .{ .@"Philipp-M", .amaanq },
+        .tier = 2,
+    },
+    .{
+        .name = .zathurarc,
+        .install = .{
+            .revision = "0554b4a5d313244b7fc000cbb41c04afae4f4e31",
+            .url = "https://github.com/Freed-Wu/tree-sitter-zathurarc",
+        },
+        .maintainers = .{.@"Freed-Wu"},
+        .tier = 2,
+    },
+    .{
+        .name = .zig,
+        .install = .{
+            .revision = "6479aa13f32f701c383083d8b28360ebd682fb7d",
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-zig",
+        },
+        .maintainers = .{.amaanq},
+        .tier = 2,
+    },
+    .{
+        .name = .ziggy,
+        .install = .{
+            .revision = "4353b20ef2ac750e35c6d68e4eb2a07c2d7cf901",
+            .url = "https://github.com/kristoff-it/ziggy",
+            .subpath = "tree-sitter-ziggy",
+        },
+        .maintainers = .{.rockorager},
+        .tier = 2,
+    },
+    .{
+        .name = .@"ziggy-schema",
+        .install = .{
+            .revision = "4353b20ef2ac750e35c6d68e4eb2a07c2d7cf901",
+            .url = "https://github.com/kristoff-it/ziggy",
+            .subpath = "tree-sitter-ziggy-schema",
+        },
+        .maintainers = .{.rockorager},
+        .tier = 2,
+    },
+}

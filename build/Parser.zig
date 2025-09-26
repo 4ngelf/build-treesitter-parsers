@@ -10,12 +10,13 @@ const InstallInfo = struct {
     url: []const u8,
     revision: []const u8,
     subpath: ?[]const u8 = null,
+    needs_scanner: bool = false,
     c_sources: ?[]const []const u8 = null,
 };
 
 pub fn build(self: *const Parser, b: *Build, config: *const Config) *Build.Step.Compile {
     const tsname = "tree-sitter-" ++ @tagName(self.name);
-    const targz_url = getArchiveFromRepo(b, &self.install);
+    const targz_url = getTarGzFromRepo(b, self.install.url, self.install.revision);
 
     config.curl_run.addArg(targz_url);
     const targz = config.curl_run.addPrefixedOutputFileArg("-o", tsname ++ ".tar.gz");
@@ -47,6 +48,11 @@ pub fn build(self: *const Parser, b: *Build, config: *const Config) *Build.Step.
         .file = parser_dir.path(b, "parser.c"),
     });
 
+    if (self.install.needs_scanner)
+        parser.root_module.addCSourceFile(.{
+            .file = repository.path(b, "src/scanner.c"),
+        });
+
     if (self.install.c_sources) |c_sources|
         parser.root_module.addCSourceFiles(.{
             .root = repository,
@@ -56,15 +62,42 @@ pub fn build(self: *const Parser, b: *Build, config: *const Config) *Build.Step.
     return parser;
 }
 
-fn getArchiveFromRepo(b: *Build, install: *const InstallInfo) []const u8 {
-    // TODO: gitlab
-    // TODO: codeberg
-    // TODO: sourcehut
-    const targz_url = std.fmt.allocPrint(b.allocator, "{s}/archive/{s}.tar.gz", .{
-        install.url,
-        install.revision,
+fn getTarGzFromRepo(b: *Build, url: []const u8, revision: []const u8) []const u8 {
+    const uri = std.Uri.parse(url) catch
+        std.debug.panic("fix url '{s}' in parsers.zon", .{url});
+    const host = uri.getHostAlloc(b.allocator) catch @panic("OOM");
+
+    if (std.mem.eql(u8, host, "github.com"))
+        return getTarGzFromGitHubOrCodeberg(b, url, revision)
+    else if (std.mem.eql(u8, host, "gitlab.com"))
+        return getTarGzFromGitLab(
+            b,
+            url,
+            revision,
+            std.fs.path.basename(uri.path.percent_encoded),
+        )
+    else if (std.mem.eql(u8, host, "codeberg.org"))
+        return getTarGzFromGitHubOrCodeberg(b, url, revision)
+    else if (std.mem.eql(u8, host, "sr.ht"))
+        @panic("not implemented for sourcehut"); // TODO:
+
+    unreachable;
+}
+
+fn getTarGzFromGitHubOrCodeberg(b: *Build, url: []const u8, revision: []const u8) []const u8 {
+    return std.fmt.allocPrint(b.allocator, "{s}/archive/{s}.tar.gz", .{
+        url,
+        revision,
     }) catch @panic("OOM");
-    return targz_url;
+}
+
+fn getTarGzFromGitLab(b: *Build, url: []const u8, revision: []const u8, name: []const u8) []const u8 {
+    return std.fmt.allocPrint(b.allocator, "{s}/-/archive/{s}/{s}-{s}.tar.gz", .{
+        url,
+        revision,
+        name,
+        revision,
+    }) catch @panic("OOM");
 }
 
 const TreeSitterGenerateOptions = struct {
