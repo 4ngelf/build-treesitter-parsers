@@ -19,6 +19,14 @@ pub fn build(b: *std.Build) void {
             .optimize = .ReleaseFast,
         }),
     });
+    const generate_parser_tool = b.addExecutable(.{
+        .name = "generate-parser",
+        .root_module = b.createModule(.{
+            .root_source_file = b.path("scripts/generate-parser.zig"),
+            .target = b.resolveTargetQuery(.{}),
+            .optimize = .ReleaseFast,
+        }),
+    });
 
     const config: Config = .{
         .target = target,
@@ -26,6 +34,7 @@ pub fn build(b: *std.Build) void {
         .abi = abi,
         .curl_run = curl_run,
         .untar_tool = untar_tool,
+        .generate_parser_tool = generate_parser_tool,
     };
 
     inline for (parsers) |parser| {

@@ -26,11 +26,11 @@ pub fn build(self: *const Parser, b: *Build, config: *const Config) *Build.Step.
     const repository = untar_run.addOutputDirectoryArg(tsname ++ "-tmp");
 
     const parser_dir = addTreeSitterGenerate(b, .{
-        .cwd = if (self.install.subpath) |subpath|
+        .config = config,
+        .treesitter_path = if (self.install.subpath) |subpath|
             repository.path(b, subpath)
         else
             repository,
-        .abi = config.abi,
         .directory_output = tsname ++ "-src",
     });
 
@@ -101,18 +101,16 @@ fn getTarGzFromGitLab(b: *Build, url: []const u8, revision: []const u8, name: []
 }
 
 const TreeSitterGenerateOptions = struct {
-    cwd: Build.LazyPath,
-    abi: i32,
+    config: *const Config,
+    treesitter_path: Build.LazyPath,
     directory_output: []const u8,
 };
 
 fn addTreeSitterGenerate(b: *Build, opts: TreeSitterGenerateOptions) Build.LazyPath {
-    const run = b.addSystemCommand(&.{
-        "tree-sitter", "generate",
-        "--abi",       intToStr(b, opts.abi),
-    });
-    run.setCwd(opts.cwd);
-    return run.addPrefixedOutputDirectoryArg("-o", opts.directory_output);
+    const run = b.addRunArtifact(opts.config.generate_parser_tool);
+    run.setCwd(opts.treesitter_path);
+    run.addArg(intToStr(b, opts.config.abi));
+    return run.addOutputDirectoryArg(opts.directory_output);
 }
 
 fn intToStr(b: *Build, int: anytype) []const u8 {
