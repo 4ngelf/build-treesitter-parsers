@@ -1897,6 +1897,7 @@
         .install = .{
             .revision = "d62e832b69a0aa3d4f87fc34ba62d931d6c23f55",
             .url = "https://github.com/apple/tree-sitter-pkl",
+            .needs_scanner = true,
         },
         .maintainers = .{.ribru17},
         .tier = 2,
