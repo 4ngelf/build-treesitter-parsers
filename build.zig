@@ -8,8 +8,8 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{ .preferred_optimize_mode = .ReleaseSmall });
     const abi = b.option(i32, "abi", "tree-sitter ABI") orelse default_treesitter_abi;
-    const curl_run = b.addSystemCommand(&.{
-        "curl", "--location", "--parallel",
+    var curl_run = b.addSystemCommand(&.{
+        "curl", "--silent", "--show-error", "--location", "--parallel",
     });
     const untar_tool = b.addExecutable(.{
         .name = "untar_tool",
@@ -44,6 +44,9 @@ pub fn build(b: *std.Build) void {
             if (set.contains(.all)) set.toggleAll();
             break :set set;
         } else .initFull();
+
+    if (parser_set.contains(.all))
+        curl_run.addCheck(.{ .expect_term = .{ .Exited = 0 } });
 
     inline for (parsers) |parser| {
         if (parser_set.contains(parser.name)) {
