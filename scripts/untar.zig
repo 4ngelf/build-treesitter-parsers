@@ -25,8 +25,8 @@ pub fn main() !void {
     var stream_buffer: [std.heap.page_size_max]u8 = undefined;
     var read_tar_gz = targz_file.reader(&stream_buffer);
 
-    var decompress_buffer: [flate.max_window_len]u8 = undefined;
-    var read_tar: flate.Decompress = .init(&read_tar_gz.interface, .gzip, &decompress_buffer);
+    const decompress_buffer: []u8 = try allocator.alloc(u8, 32 * 1024 * 1024); // 32 MebiBytes
+    var read_tar: flate.Decompress = .init(&read_tar_gz.interface, .gzip, decompress_buffer);
 
     var diag: tar.Diagnostics = .{ .allocator = allocator };
     defer diag.deinit();
