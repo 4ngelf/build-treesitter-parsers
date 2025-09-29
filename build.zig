@@ -37,7 +37,11 @@ pub fn build(b: *std.Build) void {
         .generate_parser_tool = generate_parser_tool,
     };
 
-    const parser_option = b.option([]const ParserName, "parser", "parsers to compile separated by commas or `all`. [default: all]");
+    const parser_option = b.option(
+        []const ParserName,
+        "parser",
+        "select parser to compile or `all` parsers. [default: all]",
+    );
     const parser_set: std.EnumSet(ParserName) =
         if (parser_option) |selection| set: {
             var set: std.EnumSet(ParserName) = .initMany(selection);
