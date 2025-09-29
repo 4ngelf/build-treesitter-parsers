@@ -1370,16 +1370,17 @@
         .maintainers = .{.fredrikekre},
         .tier = 2,
     },
-    .{
-        .name = .just,
-        .install = .{
-            .revision = "bb0c898a80644de438e6efe5d88d30bf092935cd",
-            .url = "https://github.com/IndianBoy42/tree-sitter-just",
-            .needs_scanner = true,
-        },
-        .maintainers = .{.Hubro},
-        .tier = 2,
-    },
+    // TODO: NDEBUG
+    // .{
+    //     .name = .just,
+    //     .install = .{
+    //         .revision = "bb0c898a80644de438e6efe5d88d30bf092935cd",
+    //         .url = "https://github.com/IndianBoy42/tree-sitter-just",
+    //         .needs_scanner = true,
+    //     },
+    //     .maintainers = .{.Hubro},
+    //     .tier = 2,
+    // },
     .{
         .name = .kcl,
         .install = .{
