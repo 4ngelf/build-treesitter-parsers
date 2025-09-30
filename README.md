@@ -2,6 +2,13 @@
 
 [![Compile parsers](https://github.com/4ngelf/build-treesitter-parsers/actions/workflows/package_parsers.yaml/badge.svg)](https://github.com/4ngelf/build-treesitter-parsers/actions/workflows/package_parsers.yaml)
 
+The [list of parsers] was adapted from `[nvim-treesitter/nvim-treesitter]` list of parsers.
+
+Each parser is compiled as defined in [`Parser.zig`](./build/Parser.zig)
+
+[list of parsers]: ./parsers.zon
+[nvim-treesitter/nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
+
 ## Install
 
 1. [Download release] for current system
