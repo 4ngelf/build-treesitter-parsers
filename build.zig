@@ -7,7 +7,7 @@ const default_treesitter_abi: i32 = 15;
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{ .preferred_optimize_mode = .ReleaseSmall });
-    const abi = b.option(i32, "abi", "tree-sitter ABI") orelse default_treesitter_abi;
+    const abi = b.option(i32, "abi", "tree-sitter ABI. [default: 15]") orelse default_treesitter_abi;
     var curl_run = b.addSystemCommand(&.{
         "curl", "--silent", "--show-error", "--location", "--parallel",
     });
@@ -59,10 +59,22 @@ pub fn build(b: *std.Build) void {
                 .dest_dir = .{ .override = .{ .custom = "parser" } },
                 .pdb_dir = .disabled,
                 .implib_dir = .disabled,
-                .dest_sub_path = @tagName(parser.name) ++ ".so",
+                .dest_sub_path = comptime parserBasename(@tagName(parser.name)),
             });
             b.getInstallStep().dependOn(&parser_install.step);
         }
+    }
+}
+
+fn parserBasename(comptime input: []const u8) []const u8 {
+    @setEvalBranchQuota(10000);
+    comptime {
+        const basename = input ++ ".so";
+        var buf: [basename.len]u8 = undefined;
+        std.mem.copyForwards(u8, &buf, basename);
+        std.mem.replaceScalar(u8, &buf, '-', '_');
+        const result = buf;
+        return &result;
     }
 }
 
